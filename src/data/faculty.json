@@ -1,0 +1,62 @@
+[
+  {
+    "id": "FAC001",
+    "name": "Dr. Rajesh Kumar",
+    "email": "rajesh.kumar@college.edu",
+    "department": "Computer Science",
+    "designation": "Professor",
+    "profileImage": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=150&h=150&fit=crop&crop=face",
+    "phone": "+91 9876543220",
+    "specialization": ["Artificial Intelligence", "Machine Learning", "Data Science"],
+    "experience": 15,
+    "qualifications": ["Ph.D. in Computer Science", "M.Tech in AI"]
+  },
+  {
+    "id": "FAC002",
+    "name": "Prof. Anita Singh",
+    "email": "anita.singh@college.edu",
+    "department": "Computer Science",
+    "designation": "Associate Professor",
+    "profileImage": "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=150&h=150&fit=crop&crop=face",
+    "phone": "+91 9876543221",
+    "specialization": ["Cloud Computing", "Distributed Systems", "Software Engineering"],
+    "experience": 12,
+    "qualifications": ["Ph.D. in Computer Engineering", "M.E. in Software Systems"]
+  },
+  {
+    "id": "FAC003",
+    "name": "Dr. Meera Joshi",
+    "email": "meera.joshi@college.edu",
+    "department": "Electronics",
+    "designation": "Professor",
+    "profileImage": "https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=150&h=150&fit=crop&crop=face",
+    "phone": "+91 9876543222",
+    "specialization": ["Digital Signal Processing", "VLSI Design", "Embedded Systems"],
+    "experience": 18,
+    "qualifications": ["Ph.D. in Electronics", "M.Tech in VLSI"]
+  },
+  {
+    "id": "FAC004",
+    "name": "Dr. Suresh Reddy",
+    "email": "suresh.reddy@college.edu",
+    "department": "Mechanical",
+    "designation": "Associate Professor",
+    "profileImage": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    "phone": "+91 9876543223",
+    "specialization": ["Thermal Engineering", "Manufacturing", "CAD/CAM"],
+    "experience": 10,
+    "qualifications": ["Ph.D. in Mechanical Engineering", "M.Tech in Thermal"]
+  },
+  {
+    "id": "FAC005",
+    "name": "Prof. Vikram Gupta",
+    "email": "vikram.gupta@college.edu",
+    "department": "Computer Science",
+    "designation": "Assistant Professor",
+    "profileImage": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    "phone": "+91 9876543224",
+    "specialization": ["Web Development", "Mobile Apps", "UI/UX Design"],
+    "experience": 8,
+    "qualifications": ["M.Tech in Computer Science", "B.Tech in IT"]
+  }
+]

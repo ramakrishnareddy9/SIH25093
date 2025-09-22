@@ -1,0 +1,128 @@
+{
+  "departmentStats": [
+    {
+      "department": "Computer Science",
+      "totalStudents": 120,
+      "activeStudents": 115,
+      "averageGPA": 8.5,
+      "averageAttendance": 91,
+      "totalActivities": 245,
+      "approvedActivities": 220,
+      "pendingActivities": 25
+    },
+    {
+      "department": "Electronics",
+      "totalStudents": 90,
+      "activeStudents": 88,
+      "averageGPA": 8.3,
+      "averageAttendance": 89,
+      "totalActivities": 180,
+      "approvedActivities": 165,
+      "pendingActivities": 15
+    },
+    {
+      "department": "Mechanical",
+      "totalStudents": 100,
+      "activeStudents": 95,
+      "averageGPA": 8.1,
+      "averageAttendance": 87,
+      "totalActivities": 160,
+      "approvedActivities": 145,
+      "pendingActivities": 15
+    },
+    {
+      "department": "Civil",
+      "totalStudents": 80,
+      "activeStudents": 78,
+      "averageGPA": 7.9,
+      "averageAttendance": 85,
+      "totalActivities": 130,
+      "approvedActivities": 120,
+      "pendingActivities": 10
+    }
+  ],
+  "activityTypes": [
+    {
+      "type": "conference",
+      "count": 45,
+      "percentage": 18.5
+    },
+    {
+      "type": "certification",
+      "count": 60,
+      "percentage": 24.7
+    },
+    {
+      "type": "internship",
+      "count": 35,
+      "percentage": 14.4
+    },
+    {
+      "type": "competition",
+      "count": 40,
+      "percentage": 16.5
+    },
+    {
+      "type": "volunteering",
+      "count": 30,
+      "percentage": 12.3
+    },
+    {
+      "type": "leadership",
+      "count": 25,
+      "percentage": 10.3
+    },
+    {
+      "type": "workshop",
+      "count": 8,
+      "percentage": 3.3
+    }
+  ],
+  "monthlyActivities": [
+    {"month": "Jan 2024", "activities": 25},
+    {"month": "Feb 2024", "activities": 30},
+    {"month": "Mar 2024", "activities": 35},
+    {"month": "Apr 2024", "activities": 28},
+    {"month": "May 2024", "activities": 40},
+    {"month": "Jun 2024", "activities": 32},
+    {"month": "Jul 2024", "activities": 38},
+    {"month": "Aug 2024", "activities": 45},
+    {"month": "Sep 2024", "activities": 42}
+  ],
+  "topPerformers": [
+    {
+      "studentId": "STU002",
+      "name": "Priya Patel",
+      "department": "Electronics",
+      "totalActivities": 12,
+      "totalCredits": 28,
+      "gpa": 9.1
+    },
+    {
+      "studentId": "STU001",
+      "name": "Arjun Sharma",
+      "department": "Computer Science",
+      "totalActivities": 10,
+      "totalCredits": 25,
+      "gpa": 8.7
+    },
+    {
+      "studentId": "STU003",
+      "name": "Rahul Kumar",
+      "department": "Mechanical",
+      "totalActivities": 8,
+      "totalCredits": 20,
+      "gpa": 8.2
+    }
+  ],
+  "skillsAnalysis": [
+    {"skill": "Machine Learning", "count": 25},
+    {"skill": "Web Development", "count": 22},
+    {"skill": "Leadership", "count": 20},
+    {"skill": "Cloud Computing", "count": 18},
+    {"skill": "Data Science", "count": 15},
+    {"skill": "Mobile Development", "count": 12},
+    {"skill": "IoT Development", "count": 10},
+    {"skill": "Digital Marketing", "count": 8}
+  ]
+}
