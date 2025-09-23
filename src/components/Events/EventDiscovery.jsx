@@ -87,12 +87,12 @@ const EventDiscovery = ({ userRole }) => {
   const events = dataService.getAllEvents();
 
   useEffect(() => {
-    // Load registered events from localStorage
-    const saved = localStorage.getItem(`registeredEvents_${user?.id}`);
-    if (saved) {
-      setRegisteredEvents(JSON.parse(saved));
+    // Load registered events from centralized service
+    if (user?.id) {
+      const userRegistrations = dataService.getRegistrationsByStudent(user.id);
+      setRegisteredEvents(userRegistrations);
     }
-  }, [user]);
+  }, [user, dataService]);
 
   useEffect(() => {
     let filtered = events;
@@ -120,7 +120,7 @@ const EventDiscovery = ({ userRole }) => {
     if (tabValue === 1) {
       filtered = filtered.filter(event => event.featured);
     } else if (tabValue === 2) {
-      filtered = filtered.filter(event => registeredEvents.includes(event.id));
+      filtered = filtered.filter(event => registeredEvents.some(reg => reg.eventId === event.id));
     }
 
     setFilteredEvents(filtered);
@@ -134,9 +134,23 @@ const EventDiscovery = ({ userRole }) => {
       status: 'confirmed'
     };
     
-    const updatedRegistrations = [...registeredEvents, newRegistration];
-    setRegisteredEvents(updatedRegistrations);
-    localStorage.setItem(`registeredEvents_${user.id}`, JSON.stringify(updatedRegistrations));
+    // Add registration through centralized service
+    const registrationData = {
+      eventId: selectedEvent.id,
+      studentId: user.id,
+      studentName: user.name || 'Student',
+      studentEmail: user.email || 'student@college.edu',
+      department: user.department || 'Computer Science',
+      year: user.year || 3,
+      amount: selectedEvent.fees?.student || 0,
+      paymentStatus: selectedEvent.fees?.student > 0 ? 'pending' : 'paid'
+    };
+    
+    const addedRegistration = dataService.addRegistration(registrationData);
+    if (addedRegistration) {
+      const updatedRegistrations = [...registeredEvents, addedRegistration];
+      setRegisteredEvents(updatedRegistrations);
+    }
     
     setRegistrationDialogOpen(false);
     alert('Successfully registered for the event!');
@@ -253,7 +267,7 @@ const EventDiscovery = ({ userRole }) => {
   };
 
   const isEventRegistered = (eventId) => {
-    return registeredEvents.includes(eventId);
+    return registeredEvents.some(reg => reg.eventId === eventId);
   };
 
   const isRegistrationOpen = (event) => {

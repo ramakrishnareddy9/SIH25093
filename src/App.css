@@ -1,22 +1,33 @@
-/* Smart Student Hub - Modern Enhanced Styles */
+/* Smart Student Hub - Harmonious Enhanced Styles */
 
-/* Modern CSS Variables */
+/* Enhanced CSS Variables with Color Harmony */
 :root {
-  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  /* Glassmorphism Effects */
   --glass-bg: rgba(255, 255, 255, 0.95);
-  --glass-border: rgba(255, 255, 255, 0.2);
-  --shadow-light: 0 8px 32px rgba(102, 126, 234, 0.1);
-  --shadow-medium: 0 12px 40px rgba(102, 126, 234, 0.15);
-  --shadow-heavy: 0 20px 60px rgba(102, 126, 234, 0.2);
-  --border-radius: 20px;
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --glass-bg-dark: rgba(248, 250, 252, 0.9);
+  --glass-border: rgba(37, 99, 235, 0.1);
+  --glass-border-light: rgba(255, 255, 255, 0.2);
+  
+  /* Enhanced Shadows with Color Harmony */
+  --shadow-primary: 0 4px 20px rgba(37, 99, 235, 0.15);
+  --shadow-secondary: 0 8px 30px rgba(255, 107, 107, 0.12);
+  --shadow-tertiary: 0 6px 25px rgba(245, 158, 11, 0.1);
+  --shadow-accent: 0 4px 20px rgba(16, 185, 129, 0.12);
+  --shadow-neutral: 0 4px 20px rgba(100, 116, 139, 0.08);
+  
+  /* Modern Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-2xl: 24px;
 }
 
-/* Modern Global Animations */
+/* Optimized Global Animations with Color Harmony */
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -27,7 +38,7 @@
 @keyframes slideIn {
   from {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-30px);
   }
   to {
     opacity: 1;
@@ -38,7 +49,7 @@
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   to {
     opacity: 1;
@@ -51,19 +62,16 @@
     transform: scale(1);
   }
   50% {
-    transform: scale(1.08);
+    transform: scale(1.05);
   }
 }
 
 @keyframes float {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg);
+    transform: translateY(0px);
   }
-  33% {
-    transform: translateY(-10px) rotate(1deg);
-  }
-  66% {
-    transform: translateY(5px) rotate(-1deg);
+  50% {
+    transform: translateY(-8px);
   }
 }
 
@@ -78,10 +86,10 @@
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    box-shadow: var(--shadow-primary);
   }
   50% {
-    box-shadow: 0 0 30px rgba(102, 126, 234, 0.6), 0 0 40px rgba(118, 75, 162, 0.4);
+    box-shadow: 0 0 30px rgba(37, 99, 235, 0.4), var(--shadow-secondary);
   }
 }
 
@@ -97,62 +105,68 @@
   }
 }
 
-/* Premium Utility Classes */
+/* Optimized Utility Classes */
 .fade-in {
-  animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeIn 0.6s var(--transition-normal);
 }
 
 .slide-in {
-  animation: slideIn 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: slideIn 0.5s var(--transition-normal);
 }
 
 .scale-in {
-  animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: scaleIn 0.4s var(--transition-normal);
 }
 
 .pulse {
-  animation: pulse 3s ease-in-out infinite;
+  animation: pulse 2.5s ease-in-out infinite;
 }
 
 .float {
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 .shimmer {
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
   background-size: 200px 100%;
-  animation: shimmer 2s infinite;
+  animation: shimmer 1.8s infinite;
 }
 
 .glow {
-  animation: glow 3s ease-in-out infinite;
+  animation: glow 2.5s ease-in-out infinite;
 }
 
 .gradient-shift {
   background-size: 200% 200%;
-  animation: gradient-shift 4s ease infinite;
+  animation: gradient-shift 3s ease infinite;
 }
 
-/* Modern Glassmorphism Card Styles */
+/* Enhanced Glassmorphism Card Styles */
 .glass-card {
   background: var(--glass-bg) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   border: 1px solid var(--glass-border) !important;
-  border-radius: var(--border-radius) !important;
-  box-shadow: var(--shadow-light) !important;
-  transition: var(--transition) !important;
+  border-radius: var(--radius-xl) !important;
+  box-shadow: var(--shadow-neutral) !important;
+  transition: var(--transition-normal) !important;
   position: relative !important;
   overflow: hidden !important;
 }
 
+.glass-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: var(--shadow-primary) !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
+}
+
 .MuiCard-root {
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  border-radius: 20px !important;
+  transition: var(--transition-normal) !important;
+  border-radius: var(--radius-xl) !important;
   background: var(--glass-bg) !important;
   backdrop-filter: blur(20px) !important;
   border: 1px solid var(--glass-border) !important;
-  margin-bottom: 24px !important;
+  margin-bottom: 20px !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -164,14 +178,14 @@
   left: -100% !important;
   width: 100% !important;
   height: 100% !important;
-  background: linear-gradient(90deg, transparent, rgba(102, 126, 234, 0.1), transparent) !important;
-  transition: left 0.5s ease !important;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.08), transparent) !important;
+  transition: left 0.4s ease !important;
 }
 
 .MuiCard-root:hover {
-  transform: translateY(-12px) scale(1.02) !important;
-  box-shadow: 0 20px 60px rgba(102, 126, 234, 0.15), 0 8px 32px rgba(118, 75, 162, 0.1) !important;
-  border-color: rgba(102, 126, 234, 0.3) !important;
+  transform: translateY(-6px) scale(1.01) !important;
+  box-shadow: var(--shadow-primary) !important;
+  border-color: rgba(37, 99, 235, 0.2) !important;
 }
 
 .MuiCard-root:hover::before {
@@ -187,13 +201,13 @@
   border-top: 1px solid rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Premium Enhanced Button Styles */
+/* Enhanced Button Styles with Color Harmony */
 .MuiButton-root {
-  border-radius: 16px !important;
+  border-radius: var(--radius-lg) !important;
   text-transform: none !important;
   font-weight: 600 !important;
   box-shadow: none !important;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  transition: var(--transition-normal) !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -205,8 +219,8 @@
   left: -100% !important;
   width: 100% !important;
   height: 100% !important;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent) !important;
-  transition: left 0.5s ease !important;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent) !important;
+  transition: left 0.4s ease !important;
 }
 
 .MuiButton-root:hover::before {
@@ -214,28 +228,28 @@
 }
 
 .MuiButton-contained {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #667eea 100%) !important;
+  background: var(--gradient-primary) !important;
   background-size: 200% 200% !important;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3), 0 4px 12px rgba(118, 75, 162, 0.2) !important;
+  box-shadow: var(--shadow-primary) !important;
   color: white !important;
 }
 
 .MuiButton-contained:hover {
   background-position: right center !important;
-  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4), 0 6px 20px rgba(118, 75, 162, 0.3) !important;
-  transform: translateY(-4px) scale(1.05) !important;
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.3) !important;
+  transform: translateY(-2px) scale(1.02) !important;
 }
 
 .MuiButton-outlined {
-  border: 2px solid transparent !important;
-  background: linear-gradient(white, white) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box !important;
-  color: #667eea !important;
+  border: 2px solid var(--primary-blue) !important;
+  color: var(--primary-blue) !important;
+  background: transparent !important;
 }
 
 .MuiButton-outlined:hover {
-  background: linear-gradient(rgba(102, 126, 234, 0.05), rgba(102, 126, 234, 0.05)) padding-box, linear-gradient(135deg, #667eea, #764ba2) border-box !important;
-  transform: translateY(-2px) scale(1.02) !important;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15) !important;
+  background: rgba(37, 99, 235, 0.05) !important;
+  transform: translateY(-1px) scale(1.01) !important;
+  box-shadow: var(--shadow-primary) !important;
 }
 
 /* Enhanced Chip Styles */
@@ -363,66 +377,73 @@
   animation: pulse 1.5s ease-in-out infinite;
 }
 
-/* Premium Status Colors with Gradients */
+/* Harmonious Status Colors */
 .status-pending {
-  color: #ff9800 !important;
-  background: linear-gradient(135deg, rgba(255, 152, 0, 0.1) 0%, rgba(255, 193, 7, 0.05) 100%) !important;
-  border: 1px solid rgba(255, 152, 0, 0.2) !important;
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.15) !important;
+  color: var(--tertiary-amber-dark) !important;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(251, 191, 36, 0.05) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.2) !important;
+  box-shadow: var(--shadow-tertiary) !important;
 }
 
 .status-approved {
-  color: #4caf50 !important;
-  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(139, 195, 74, 0.05) 100%) !important;
-  border: 1px solid rgba(76, 175, 80, 0.2) !important;
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.15) !important;
+  color: var(--accent-emerald-dark) !important;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.05) 100%) !important;
+  border: 1px solid rgba(16, 185, 129, 0.2) !important;
+  box-shadow: var(--shadow-accent) !important;
 }
 
 .status-rejected {
-  color: #f44336 !important;
-  background: linear-gradient(135deg, rgba(244, 67, 54, 0.1) 0%, rgba(233, 30, 99, 0.05) 100%) !important;
-  border: 1px solid rgba(244, 67, 54, 0.2) !important;
-  box-shadow: 0 4px 12px rgba(244, 67, 54, 0.15) !important;
+  color: var(--secondary-coral-dark) !important;
+  background: linear-gradient(135deg, rgba(255, 107, 107, 0.1) 0%, rgba(255, 135, 135, 0.05) 100%) !important;
+  border: 1px solid rgba(255, 107, 107, 0.2) !important;
+  box-shadow: var(--shadow-secondary) !important;
 }
 
 .status-info {
-  color: #2196f3 !important;
-  background: linear-gradient(135deg, rgba(33, 150, 243, 0.1) 0%, rgba(3, 169, 244, 0.05) 100%) !important;
-  border: 1px solid rgba(33, 150, 243, 0.2) !important;
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.15) !important;
+  color: var(--primary-blue-dark) !important;
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%) !important;
+  border: 1px solid rgba(37, 99, 235, 0.2) !important;
+  box-shadow: var(--shadow-primary) !important;
 }
 
-/* Premium Hover Effects for Status */
-.status-pending:hover,
-.status-approved:hover,
-.status-rejected:hover,
+/* Enhanced Hover Effects for Status */
+.status-pending:hover {
+  transform: translateY(-2px) scale(1.01) !important;
+  box-shadow: 0 6px 25px rgba(245, 158, 11, 0.2) !important;
+}
+
+.status-approved:hover {
+  transform: translateY(-2px) scale(1.01) !important;
+  box-shadow: 0 6px 25px rgba(16, 185, 129, 0.2) !important;
+}
+
+.status-rejected:hover {
+  transform: translateY(-2px) scale(1.01) !important;
+  box-shadow: 0 6px 25px rgba(255, 107, 107, 0.2) !important;
+}
+
 .status-info:hover {
-  transform: translateY(-2px) scale(1.02) !important;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2) !important;
+  transform: translateY(-2px) scale(1.01) !important;
+  box-shadow: 0 6px 25px rgba(37, 99, 235, 0.2) !important;
 }
 
-/* Status Indicators */
+/* Simplified Status Indicators */
 .status-success {
-  color: #2e7d32 !important;
-  background: rgba(46, 125, 50, 0.1) !important;
+  color: var(--accent-emerald-dark) !important;
+  background: rgba(16, 185, 129, 0.1) !important;
 }
 
 .status-warning {
-  color: #ed6c02 !important;
-  background: rgba(237, 108, 2, 0.1) !important;
+  color: var(--tertiary-amber-dark) !important;
+  background: rgba(245, 158, 11, 0.1) !important;
 }
 
 .status-error {
-  color: #d32f2f !important;
-  background: rgba(211, 47, 47, 0.1) !important;
+  color: var(--secondary-coral-dark) !important;
+  background: rgba(255, 107, 107, 0.1) !important;
 }
 
-.status-info {
-  color: #0288d1 !important;
-  background: rgba(2, 136, 209, 0.1) !important;
-}
-
-/* Layout Improvements */
+/* Optimized Layout */
 .main-content {
   padding: 0 !important;
   margin: 0 !important;
@@ -435,55 +456,44 @@
   padding: 0 16px !important;
 }
 
-.grid-container {
-  padding: 0 !important;
-}
-
 .page-container {
   padding: 0 !important;
   margin: 0 !important;
   width: 100% !important;
-  max-width: none !important;
 }
 
 .section-container {
   margin-bottom: 20px !important;
 }
 
-.card-grid {
-  padding: 16px !important;
-  margin: 0 8px !important;
-}
-
-/* Let MUI Grid manage its own gutters via spacing prop */
 .MuiGrid-container {
   width: 100% !important;
 }
 
 .header-section {
-  margin: 0 0 32px 0 !important;
-  padding: 40px !important;
-  border-radius: 24px !important;
-  background: var(--primary-gradient) !important;
+  margin: 0 0 24px 0 !important;
+  padding: 32px !important;
+  border-radius: var(--radius-2xl) !important;
+  background: var(--gradient-primary) !important;
   color: white !important;
-  box-shadow: var(--shadow-medium) !important;
+  box-shadow: var(--shadow-primary) !important;
   position: relative !important;
   overflow: hidden !important;
 }
 
 .stats-section {
-  margin-bottom: 32px !important;
+  margin-bottom: 24px !important;
   padding: 0 8px !important;
 }
 
 .content-section {
-  padding: 32px !important;
+  padding: 24px !important;
   margin: 0 !important;
-  border-radius: 24px !important;
+  border-radius: var(--radius-2xl) !important;
   background: var(--glass-bg) !important;
   backdrop-filter: blur(20px) !important;
   border: 1px solid var(--glass-border) !important;
-  box-shadow: var(--shadow-light) !important;
+  box-shadow: var(--shadow-neutral) !important;
 }
 
 /* Responsive Design */
@@ -561,158 +571,119 @@
   }
 }
 
-/* Custom Gradient Backgrounds */
+/* Harmonious Gradient Backgrounds */
 .gradient-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background: var(--gradient-primary) !important;
+}
+
+.gradient-secondary {
+  background: var(--gradient-secondary) !important;
+}
+
+.gradient-accent {
+  background: var(--gradient-accent) !important;
 }
 
 .gradient-success {
-  background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%) !important;
+  background: linear-gradient(135deg, var(--accent-emerald) 0%, var(--accent-emerald-light) 100%) !important;
 }
 
 .gradient-warning {
-  background: linear-gradient(135deg, #ff9800 0%, #ffc107 100%) !important;
+  background: linear-gradient(135deg, var(--tertiary-amber) 0%, var(--tertiary-amber-light) 100%) !important;
 }
 
 .gradient-error {
-  background: linear-gradient(135deg, #f44336 0%, #e91e63 100%) !important;
+  background: linear-gradient(135deg, var(--secondary-coral) 0%, var(--secondary-coral-light) 100%) !important;
 }
 
-/* Hover Effects */
+/* Enhanced Hover Effects */
 .hover-lift {
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  transition: var(--transition-normal) !important;
 }
 
 .hover-lift:hover {
   transform: translateY(-4px) !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+  box-shadow: var(--shadow-primary) !important;
 }
 
-/* Settings Component Styles */
+/* Optimized Settings Component Styles */
 .settings-container {
-  background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%) !important;
-  border: 1px solid rgba(102, 126, 234, 0.1) !important;
-  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.08) !important;
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--shadow-neutral) !important;
+  border-radius: var(--radius-xl) !important;
   position: relative !important;
-  z-index: 2 !important;
   overflow: visible !important;
 }
 
 .settings-tab {
-  transition: all 0.3s ease !important;
+  transition: var(--transition-normal) !important;
 }
 
 .settings-tab:hover {
-  background: rgba(102, 126, 234, 0.05) !important;
-  transform: translateY(-2px) !important;
+  background: rgba(37, 99, 235, 0.05) !important;
+  transform: translateY(-1px) !important;
 }
 
-/* Settings Cards */
 .settings-card {
-  background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%) !important;
-  border: 1px solid rgba(102, 126, 234, 0.08) !important;
-  border-radius: 16px !important;
-  transition: all 0.3s ease !important;
-  margin-bottom: 24px !important;
-  position: relative !important;
-  z-index: 1 !important;
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--radius-lg) !important;
+  transition: var(--transition-normal) !important;
+  margin-bottom: 20px !important;
 }
 
 .settings-card:hover {
-  transform: translateY(-4px) !important;
-  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.12) !important;
-  border-color: rgba(102, 126, 234, 0.2) !important;
-  z-index: 3 !important;
+  transform: translateY(-3px) !important;
+  box-shadow: var(--shadow-primary) !important;
+  border-color: rgba(37, 99, 235, 0.15) !important;
 }
 
-/* Settings Form Controls */
 .settings-switch {
-  transition: all 0.3s ease !important;
+  transition: var(--transition-normal) !important;
 }
 
 .settings-switch:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.02) !important;
 }
 
-/* Settings Profile Avatar */
 .settings-avatar {
-  position: relative !important;
-  transition: all 0.3s ease !important;
+  transition: var(--transition-normal) !important;
 }
 
 .settings-avatar:hover {
-  transform: scale(1.05) !important;
-  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2) !important;
+  transform: scale(1.03) !important;
+  box-shadow: var(--shadow-primary) !important;
 }
 
-/* Settings Layout Fixes */
-.settings-container .MuiGrid-container {
-  margin: 0 !important;
-  width: 100% !important;
-}
-
-.settings-container .MuiGrid-item {
-  padding: 16px !important;
-}
-
-.settings-container .MuiTabs-root {
-  margin-bottom: 32px !important;
-}
-
-.settings-container .MuiCard-root {
-  margin-bottom: 24px !important;
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-/* Prevent overlapping in Settings */
-.settings-container {
-  clear: both !important;
-  position: relative !important;
-  overflow: visible !important;
-}
-
-.settings-container > * {
-  position: relative !important;
-  z-index: 1 !important;
-}
-
-/* Dark Theme Styles */
+/* Enhanced Dark Theme Support */
 .dark-theme {
-  background-color: #121212 !important;
-  color: #ffffff !important;
+  --glass-bg: rgba(30, 41, 59, 0.9);
+  --glass-border: rgba(148, 163, 184, 0.1);
+  --shadow-primary: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-neutral: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--neutral-900) !important;
+  color: var(--neutral-100) !important;
 }
 
 .dark-theme .MuiPaper-root {
-  background-color: #1e1e1e !important;
-  color: #ffffff !important;
+  background: var(--glass-bg) !important;
+  color: var(--neutral-100) !important;
+  border-color: var(--glass-border) !important;
 }
 
 .dark-theme .MuiCard-root {
-  background-color: #2d2d2d !important;
-  border-color: #444444 !important;
+  background: var(--glass-bg) !important;
+  border-color: var(--glass-border) !important;
 }
 
 .dark-theme .MuiTextField-root .MuiInputBase-root {
-  background-color: #333333 !important;
-  color: #ffffff !important;
-}
-
-.dark-theme .MuiSelect-root {
-  background-color: #333333 !important;
-  color: #ffffff !important;
-}
-
-.dark-theme .MuiInputLabel-root {
-  color: #cccccc !important;
+  background: rgba(51, 65, 85, 0.8) !important;
+  color: var(--neutral-100) !important;
 }
 
 .dark-theme .MuiTypography-root {
-  color: #ffffff !important;
-}
-
-.dark-theme .MuiListItemText-secondary {
-  color: #cccccc !important;
+  color: var(--neutral-100) !important;
 }
 
 /* Compact View Styles */
@@ -725,18 +696,10 @@
 }
 
 .compact-view .header-section {
-  padding: 24px 32px !important;
+  padding: 20px !important;
   margin-bottom: 16px !important;
 }
 
 .compact-view .content-section {
-  padding: 24px !important;
-}
-
-.compact-view .settings-container .MuiGrid-item {
-  padding: 12px !important;
-}
-
-.compact-view .MuiListItem-root {
-  padding: 8px 16px !important;
+  padding: 20px !important;
 }

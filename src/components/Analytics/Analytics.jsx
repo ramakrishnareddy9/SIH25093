@@ -42,28 +42,48 @@ const Analytics = ({ userRole }) => {
   const dataService = useDataService('Analytics');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [selectedTimeframe, setSelectedTimeframe] = useState('all');
-  const [analyticsData, setAnalyticsData] = useState({});
-  const [filteredData, setFilteredData] = useState({});
+  const [isLoading, setIsLoading] = useState(true);
+  const [analyticsData, setAnalyticsData] = useState({
+    departmentStats: [],
+    activityTypes: [],
+    monthlyActivities: [],
+    topPerformers: [],
+    skillsAnalysis: []
+  });
+  const [filteredData, setFilteredData] = useState({
+    departmentStats: [],
+    activityTypes: [],
+    monthlyActivities: [],
+    topPerformers: [],
+    skillsAnalysis: []
+  });
 
   useEffect(() => {
     // Load analytics data from service
-    const data = dataService.getAnalytics();
-    setAnalyticsData(data);
-    setFilteredData(data);
-  }, []);
+    setIsLoading(true);
+    try {
+      const data = dataService.getAnalytics();
+      setAnalyticsData(data);
+      setFilteredData(data);
+    } catch (error) {
+      console.error('Error loading analytics data:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  }, [dataService]);
 
   useEffect(() => {
     // Apply filters to data
     let filtered = { ...analyticsData };
     
-    if (selectedDepartment !== 'all') {
+    if (selectedDepartment !== 'all' && filtered.departmentStats) {
       filtered.departmentStats = filtered.departmentStats.filter(
         (dept) => dept.department === selectedDepartment
       );
     }
 
     setFilteredData(filtered);
-  }, [selectedDepartment, selectedTimeframe]);
+  }, [selectedDepartment, selectedTimeframe, analyticsData]);
 
   const StatCard = ({ title, value, icon, color, subtitle, trend }) => (
     <Card
@@ -124,7 +144,7 @@ const Analytics = ({ userRole }) => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {filteredData.departmentStats.map((dept) => (
+            {(filteredData.departmentStats || []).map((dept) => (
               <TableRow key={dept.department}>
                 <TableCell component="th" scope="row">
                   <Box sx={{ display: 'flex', alignItems: 'center' }}>
@@ -174,7 +194,7 @@ const Analytics = ({ userRole }) => {
         Activity Type Distribution
       </Typography>
       <Grid container spacing={2}>
-        {analyticsData.activityTypes.map((type) => (
+        {(analyticsData.activityTypes || []).map((type) => (
           <Grid item xs={12} sm={6} md={4} key={type.type}>
             <Card variant="outlined">
               <CardContent>
@@ -206,7 +226,7 @@ const Analytics = ({ userRole }) => {
         Top Performing Students
       </Typography>
       <List>
-        {analyticsData.topPerformers.map((student, index) => (
+        {(analyticsData.topPerformers || []).map((student, index) => (
           <ListItem key={student.studentId}>
             <ListItemAvatar>
               <Avatar sx={{ bgcolor: index === 0 ? 'gold' : index === 1 ? 'silver' : '#cd7f32' }}>
@@ -215,27 +235,21 @@ const Analytics = ({ userRole }) => {
             </ListItemAvatar>
             <ListItemText
               primary={student.name}
-              secondary={
-                <Box>
-                  <Typography variant="body2" color="text.secondary">
-                    {student.department} • GPA: {student.gpa}
-                  </Typography>
-                  <Box sx={{ display: 'flex', gap: 1, mt: 1 }}>
-                    <Chip
-                      label={`${student.totalActivities} activities`}
-                      size="small"
-                      variant="outlined"
-                    />
-                    <Chip
-                      label={`${student.totalCredits} credits`}
-                      size="small"
-                      color="primary"
-                      variant="outlined"
-                    />
-                  </Box>
-                </Box>
-              }
+              secondary={`${student.department} • GPA: ${student.gpa}`}
             />
+            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, ml: 2 }}>
+              <Chip
+                label={`${student.totalActivities} activities`}
+                size="small"
+                variant="outlined"
+              />
+              <Chip
+                label={`${student.totalCredits} credits`}
+                size="small"
+                color="primary"
+                variant="outlined"
+              />
+            </Box>
           </ListItem>
         ))}
       </List>
@@ -248,7 +262,7 @@ const Analytics = ({ userRole }) => {
         Popular Skills
       </Typography>
       <Grid container spacing={2}>
-        {analyticsData.skillsAnalysis.map((skill) => (
+        {(analyticsData.skillsAnalysis || []).map((skill) => (
           <Grid item xs={12} sm={6} md={4} key={skill.skill}>
             <Box sx={{ p: 2, border: '1px solid', borderColor: 'divider', borderRadius: 1 }}>
               <Typography variant="subtitle2" gutterBottom>
@@ -277,7 +291,7 @@ const Analytics = ({ userRole }) => {
         Monthly Activity Trends
       </Typography>
       <Box sx={{ height: 300, display: 'flex', alignItems: 'end', gap: 1 }}>
-        {analyticsData.monthlyActivities.map((month) => (
+        {(analyticsData.monthlyActivities || []).map((month) => (
           <Box
             key={month.month}
             sx={{
@@ -309,23 +323,47 @@ const Analytics = ({ userRole }) => {
     </Paper>
   );
 
-  // Calculate overall stats
-  const totalStudents = analyticsData.departmentStats.reduce(
-    (sum, dept) => sum + dept.totalStudents,
+  // Calculate overall stats with safe checks
+  const totalStudents = (filteredData.departmentStats || []).reduce(
+    (sum, dept) => sum + (dept.totalStudents || 0),
     0
   );
-  const totalActivities = analyticsData.departmentStats.reduce(
-    (sum, dept) => sum + dept.totalActivities,
+  const totalActivities = (filteredData.departmentStats || []).reduce(
+    (sum, dept) => sum + (dept.totalActivities || 0),
     0
   );
-  const totalApproved = analyticsData.departmentStats.reduce(
-    (sum, dept) => sum + dept.approvedActivities,
+  const totalApproved = (filteredData.departmentStats || []).reduce(
+    (sum, dept) => sum + (dept.approvedActivities || 0),
     0
   );
-  const totalPending = analyticsData.departmentStats.reduce(
-    (sum, dept) => sum + dept.pendingActivities,
+  const totalPending = (filteredData.departmentStats || []).reduce(
+    (sum, dept) => sum + (dept.pendingActivities || 0),
     0
   );
+
+  // Show loading state
+  if (isLoading) {
+    return (
+      <Box className="page-container">
+        <Paper className="header-section">
+          <Typography variant="h4" gutterBottom>
+            Analytics & Reporting
+          </Typography>
+          <Typography variant="body1" color="text.secondary">
+            Loading analytics data...
+          </Typography>
+        </Paper>
+        <Box className="loading-container">
+          <div className="loading-spinner pulse">
+            <TrendingUp sx={{ fontSize: 60, color: 'primary.main' }} />
+          </div>
+          <Typography variant="h6" color="text.secondary">
+            Preparing your analytics dashboard
+          </Typography>
+        </Box>
+      </Box>
+    );
+  }
 
   return (
     <Box className="page-container">
@@ -348,7 +386,7 @@ const Analytics = ({ userRole }) => {
               onChange={(e) => setSelectedDepartment(e.target.value)}
             >
               <MenuItem value="all">All Departments</MenuItem>
-              {analyticsData.departmentStats.map((dept) => (
+              {(analyticsData.departmentStats || []).map((dept) => (
                 <MenuItem key={dept.department} value={dept.department}>
                   {dept.department}
                 </MenuItem>

@@ -82,8 +82,14 @@ const EventOrganizerPanel = ({ userRole }) => {
     fee: '',
   });
 
-  // Registration data - would come from a registrations service in real implementation
+  // Dynamic registration data from service
   const [registrations, setRegistrations] = useState([]);
+  
+  useEffect(() => {
+    // Load all registrations from service
+    const allRegistrations = dataService.getAllRegistrations();
+    setRegistrations(allRegistrations);
+  }, [dataService]);
 
   // Get data from centralized service
   const events = dataService.getEventsByOrganizer(user?.name || '');
@@ -165,15 +171,22 @@ const EventOrganizerPanel = ({ userRole }) => {
   };
 
   const getEventRegistrations = (eventId) => {
-    return registrations.filter(reg => reg.eventId === eventId);
+    return dataService.getRegistrationsByEvent(eventId);
   };
 
   const getRegisteredStudents = (eventId) => {
-    const eventRegs = getEventRegistrations(eventId);
-    return eventRegs.map(reg => {
-      const student = dataService.getStudentById(reg.studentId);
-      return { ...student, registrationDate: reg.registrationDate, status: reg.status };
-    });
+    const eventRegistrations = dataService.getRegistrationsByEvent(eventId);
+    return eventRegistrations.map(reg => ({
+      id: reg.studentId,
+      name: reg.studentName,
+      email: reg.studentEmail,
+      department: reg.department,
+      year: reg.year,
+      registrationDate: reg.registrationDate,
+      status: reg.status,
+      paymentStatus: reg.paymentStatus,
+      attendanceStatus: reg.attendanceStatus
+    }));
   };
 
   const getStatusColor = (status) => {

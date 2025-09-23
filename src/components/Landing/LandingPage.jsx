@@ -108,7 +108,7 @@ const LandingPage = () => {
   return (
     <Box sx={{ 
       minHeight: '100vh',
-      background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+      background: 'linear-gradient(135deg, #2563eb 0%, #ff6b6b 100%)',
       position: 'relative',
       overflow: 'hidden'
     }}>
@@ -121,9 +121,9 @@ const LandingPage = () => {
           right: 0,
           bottom: 0,
           background: `
-            radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+            radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.3) 0%, transparent 50%),
             radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-            radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%)
+            radial-gradient(circle at 40% 40%, rgba(255, 107, 107, 0.2) 0%, transparent 50%)
           `,
           animation: 'float 20s ease-in-out infinite'
         }}
@@ -139,7 +139,7 @@ const LandingPage = () => {
           zIndex: 1000,
           background: 'rgba(255, 255, 255, 0.1)',
           backdropFilter: 'blur(20px)',
-          borderBottom: '1px solid rgba(255, 255, 255, 0.2)',
+          borderBottom: '1px solid rgba(255, 255, 255, 0.15)',
           transition: 'all 0.3s ease'
         }}
       >
@@ -175,12 +175,12 @@ const LandingPage = () => {
                 variant="contained"
                 onClick={() => navigate('/signup')}
                 sx={{
-                  background: 'linear-gradient(45deg, #FF6B6B 30%, #4ECDC4 90%)',
-                  boxShadow: '0 4px 20px rgba(255, 107, 107, 0.3)',
+                  background: 'linear-gradient(135deg, #f59e0b 0%, #10b981 100%)',
+                  boxShadow: '0 4px 20px rgba(245, 158, 11, 0.3)',
                   '&:hover': {
-                    background: 'linear-gradient(45deg, #FF5252 30%, #26C6DA 90%)',
+                    background: 'linear-gradient(135deg, #d97706 0%, #059669 100%)',
                     transform: 'translateY(-2px)',
-                    boxShadow: '0 6px 25px rgba(255, 107, 107, 0.4)'
+                    boxShadow: '0 6px 25px rgba(245, 158, 11, 0.4)'
                   }
                 }}
               >
@@ -242,15 +242,15 @@ const LandingPage = () => {
                   onClick={() => navigate('/signup')}
                   startIcon={<Rocket />}
                   sx={{
-                    background: 'linear-gradient(45deg, #FF6B6B 30%, #4ECDC4 90%)',
+                    background: 'linear-gradient(135deg, #f59e0b 0%, #10b981 100%)',
                     py: 1.5,
                     px: 4,
                     fontSize: '1.1rem',
-                    boxShadow: '0 8px 30px rgba(255, 107, 107, 0.3)',
+                    boxShadow: '0 8px 30px rgba(245, 158, 11, 0.25)',
                     '&:hover': {
-                      background: 'linear-gradient(45deg, #FF5252 30%, #26C6DA 90%)',
-                      transform: 'translateY(-3px)',
-                      boxShadow: '0 12px 40px rgba(255, 107, 107, 0.4)'
+                      background: 'linear-gradient(135deg, #d97706 0%, #059669 100%)',
+                      transform: 'translateY(-2px)',
+                      boxShadow: '0 10px 35px rgba(245, 158, 11, 0.35)'
                     }
                   }}
                 >
@@ -345,7 +345,7 @@ const LandingPage = () => {
                   }
                 }}
               >
-                <Box sx={{ color: '#4ECDC4', mb: 2 }}>
+                <Box sx={{ color: '#10b981', mb: 2 }}>
                   {React.cloneElement(stat.icon, { fontSize: 'large' })}
                 </Box>
                 <Typography variant="h3" sx={{ color: 'white', fontWeight: 700, mb: 1 }}>
@@ -529,15 +529,15 @@ const LandingPage = () => {
               onClick={() => navigate('/signup')}
               endIcon={<ArrowForward />}
               sx={{
-                background: 'linear-gradient(45deg, #FF6B6B 30%, #4ECDC4 90%)',
+                background: 'linear-gradient(135deg, #f59e0b 0%, #10b981 100%)',
                 py: 2,
                 px: 6,
                 fontSize: '1.2rem',
-                boxShadow: '0 8px 30px rgba(255, 107, 107, 0.3)',
+                boxShadow: '0 8px 30px rgba(245, 158, 11, 0.3)',
                 '&:hover': {
-                  background: 'linear-gradient(45deg, #FF5252 30%, #26C6DA 90%)',
+                  background: 'linear-gradient(135deg, #d97706 0%, #059669 100%)',
                   transform: 'translateY(-3px)',
-                  boxShadow: '0 12px 40px rgba(255, 107, 107, 0.4)'
+                  boxShadow: '0 12px 40px rgba(245, 158, 11, 0.4)'
                 }
               }}
             >
@@ -584,7 +584,7 @@ const LandingPage = () => {
           </Grid>
           <Divider sx={{ my: 4, borderColor: 'rgba(255, 255, 255, 0.2)' }} />
           <Typography sx={{ color: 'rgba(255, 255, 255, 0.6)', textAlign: 'center' }}>
-            © 2024 Smart Student Hub. All rights reserved.
+            &copy; 2024 Smart Student Hub. All rights reserved.
           </Typography>
         </Container>
       </Box>
@@ -596,10 +596,10 @@ const LandingPage = () => {
           position: 'fixed',
           bottom: 32,
           right: 32,
-          background: 'linear-gradient(45deg, #FF6B6B 30%, #4ECDC4 90%)',
+          background: 'linear-gradient(135deg, #f59e0b 0%, #10b981 100%)',
           '&:hover': {
-            background: 'linear-gradient(45deg, #FF5252 30%, #26C6DA 90%)',
-            transform: 'scale(1.1)'
+            background: 'linear-gradient(135deg, #d97706 0%, #059669 100%)',
+            transform: 'scale(1.05)'
           }
         }}
         onClick={() => navigate('/signup')}

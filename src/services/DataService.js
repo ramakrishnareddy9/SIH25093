@@ -10,6 +10,7 @@ class DataService {
       activities: [],
       events: [],
       certificates: [],
+      registrations: [],
       analytics: {},
       landing: {},
       activityTypes: {},
@@ -34,13 +35,14 @@ class DataService {
         }
       };
 
-      const [usersData, studentsData, facultyData, activitiesData, eventsData, certificatesData, analyticsData, landingData, activityTypesData, menuItemsData] = await Promise.all([
+      const [usersData, studentsData, facultyData, activitiesData, eventsData, certificatesData, registrationsData, analyticsData, landingData, activityTypesData, menuItemsData] = await Promise.all([
         loadFile('../data/users.json', []),
         loadFile('../data/students.json', []),
         loadFile('../data/faculty.json', []),
         loadFile('../data/activities.json', []),
         loadFile('../data/events.json', []),
         loadFile('../data/certificates.json', []),
+        loadFile('../data/registrations.json', []),
         loadFile('../data/analytics.json', {}),
         loadFile('../data/landing.json', {}),
         loadFile('../data/activityTypes.json', {}),
@@ -54,6 +56,7 @@ class DataService {
         activities: Array.isArray(activitiesData) ? [...activitiesData] : [],
         events: Array.isArray(eventsData) ? [...eventsData] : [],
         certificates: Array.isArray(certificatesData) ? [...certificatesData] : [],
+        registrations: Array.isArray(registrationsData) ? [...registrationsData] : [],
         analytics: typeof analyticsData === 'object' ? analyticsData : {},
         landing: typeof landingData === 'object' ? landingData : {},
         activityTypes: typeof activityTypesData === 'object' ? activityTypesData : {},
@@ -414,6 +417,58 @@ class DataService {
   }
 
   // Check if data is loaded
+  // REGISTRATION OPERATIONS
+  getAllRegistrations() {
+    return [...this.data.registrations];
+  }
+
+  getRegistrationsByEvent(eventId) {
+    return this.data.registrations.filter(reg => reg.eventId === eventId);
+  }
+
+  getRegistrationsByStudent(studentId) {
+    return this.data.registrations.filter(reg => reg.studentId === studentId);
+  }
+
+  addRegistration(registrationData) {
+    const newRegistration = {
+      id: `REG${String(this.data.registrations.length + 1).padStart(3, '0')}`,
+      registrationDate: new Date().toISOString(),
+      status: 'confirmed',
+      paymentStatus: 'pending',
+      attendanceStatus: 'not_marked',
+      ...registrationData
+    };
+    
+    this.data.registrations.push(newRegistration);
+    this.saveToStorage();
+    this.notifySubscribers('registrationAdded', newRegistration);
+    return newRegistration;
+  }
+
+  updateRegistration(registrationId, updates) {
+    const index = this.data.registrations.findIndex(reg => reg.id === registrationId);
+    if (index !== -1) {
+      this.data.registrations[index] = { ...this.data.registrations[index], ...updates };
+      this.saveToStorage();
+      this.notifySubscribers('registrationUpdated', this.data.registrations[index]);
+      return this.data.registrations[index];
+    }
+    return null;
+  }
+
+  cancelRegistration(registrationId) {
+    return this.updateRegistration(registrationId, { 
+      status: 'cancelled',
+      paymentStatus: 'refunded',
+      attendanceStatus: 'not_applicable'
+    });
+  }
+
+  markAttendance(registrationId, attendanceStatus) {
+    return this.updateRegistration(registrationId, { attendanceStatus });
+  }
+
   isDataLoaded() {
     return this.isLoaded;
   }

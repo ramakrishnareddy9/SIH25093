@@ -324,10 +324,90 @@ export const useDataService = (componentName = 'component') => {
 
   const getAnalytics = useCallback(() => {
     try {
-      return dataService.getAnalytics();
+      const data = dataService.getAnalytics();
+      // Ensure all required arrays exist with fallbacks
+      return {
+        departmentStats: data.departmentStats || [],
+        activityTypes: data.activityTypes || [],
+        monthlyActivities: data.monthlyActivities || [],
+        topPerformers: data.topPerformers || [],
+        skillsAnalysis: data.skillsAnalysis || [],
+        ...data
+      };
     } catch (err) {
       setError(err);
-      return {};
+      // Return safe default structure
+      return {
+        departmentStats: [],
+        activityTypes: [],
+        monthlyActivities: [],
+        topPerformers: [],
+        skillsAnalysis: []
+      };
+    }
+  }, []);
+
+  // Registration operations
+  const getAllRegistrations = useCallback(() => {
+    try {
+      return dataService.getAllRegistrations();
+    } catch (err) {
+      setError(err);
+      return [];
+    }
+  }, []);
+
+  const getRegistrationsByEvent = useCallback((eventId) => {
+    try {
+      return dataService.getRegistrationsByEvent(eventId);
+    } catch (err) {
+      setError(err);
+      return [];
+    }
+  }, []);
+
+  const getRegistrationsByStudent = useCallback((studentId) => {
+    try {
+      return dataService.getRegistrationsByStudent(studentId);
+    } catch (err) {
+      setError(err);
+      return [];
+    }
+  }, []);
+
+  const addRegistration = useCallback((registrationData) => {
+    try {
+      return dataService.addRegistration(registrationData);
+    } catch (err) {
+      setError(err);
+      return null;
+    }
+  }, []);
+
+  const updateRegistration = useCallback((registrationId, updates) => {
+    try {
+      return dataService.updateRegistration(registrationId, updates);
+    } catch (err) {
+      setError(err);
+      return null;
+    }
+  }, []);
+
+  const cancelRegistration = useCallback((registrationId) => {
+    try {
+      return dataService.cancelRegistration(registrationId);
+    } catch (err) {
+      setError(err);
+      return null;
+    }
+  }, []);
+
+  const markAttendance = useCallback((registrationId, attendanceStatus) => {
+    try {
+      return dataService.markAttendance(registrationId, attendanceStatus);
+    } catch (err) {
+      setError(err);
+      return null;
     }
   }, []);
 
@@ -381,6 +461,15 @@ export const useDataService = (componentName = 'component') => {
     getLandingData,
     getActivityTypes,
     getMenuItems,
-    getAnalytics
+    getAnalytics,
+    
+    // Registration operations
+    getAllRegistrations,
+    getRegistrationsByEvent,
+    getRegistrationsByStudent,
+    addRegistration,
+    updateRegistration,
+    cancelRegistration,
+    markAttendance
   };
 };
