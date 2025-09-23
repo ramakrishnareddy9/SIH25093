@@ -29,6 +29,7 @@ import {
   ListItem,
   ListItemText,
   ListItemIcon,
+  Fab,
 } from '@mui/material';
 import {
   Search,
@@ -49,15 +50,17 @@ import {
   Schedule,
   Group,
   CheckCircle,
+  Add,
 } from '@mui/icons-material';
 
-// Import data
-import eventsData from '../../data/events.json';
+// Import services and hooks
 import { useAuth } from '../../context/AuthContext';
+import { useDataService } from '../../hooks/useDataService';
 
 const EventDiscovery = ({ userRole }) => {
   const { user } = useAuth();
-  const [events, setEvents] = useState([]);
+  const dataService = useDataService('EventDiscovery');
+  
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -65,11 +68,25 @@ const EventDiscovery = ({ userRole }) => {
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [detailsDialogOpen, setDetailsDialogOpen] = useState(false);
   const [registrationDialogOpen, setRegistrationDialogOpen] = useState(false);
+  const [eventDialogOpen, setEventDialogOpen] = useState(false);
   const [tabValue, setTabValue] = useState(0);
   const [registeredEvents, setRegisteredEvents] = useState([]);
+  const [newEvent, setNewEvent] = useState({
+    title: '',
+    description: '',
+    type: '',
+    category: '',
+    startDate: '',
+    endDate: '',
+    venue: '',
+    capacity: '',
+    fee: '',
+  });
+
+  // Get all events from centralized data service
+  const events = dataService.getAllEvents();
 
   useEffect(() => {
-    setEvents(eventsData);
     // Load registered events from localStorage
     const saved = localStorage.getItem(`registeredEvents_${user?.id}`);
     if (saved) {
@@ -110,10 +127,82 @@ const EventDiscovery = ({ userRole }) => {
   }, [events, searchTerm, selectedCategory, selectedType, tabValue, registeredEvents]);
 
   const handleEventRegistration = (eventId) => {
-    const updatedRegistered = [...registeredEvents, eventId];
-    setRegisteredEvents(updatedRegistered);
-    localStorage.setItem(`registeredEvents_${user?.id}`, JSON.stringify(updatedRegistered));
+    const newRegistration = {
+      eventId,
+      userId: user.id,
+      registrationDate: new Date().toISOString(),
+      status: 'confirmed'
+    };
+    
+    const updatedRegistrations = [...registeredEvents, newRegistration];
+    setRegisteredEvents(updatedRegistrations);
+    localStorage.setItem(`registeredEvents_${user.id}`, JSON.stringify(updatedRegistrations));
+    
     setRegistrationDialogOpen(false);
+    alert('Successfully registered for the event!');
+  };
+
+  const handleCreateEvent = () => {
+    const eventData = {
+      title: newEvent.title,
+      description: newEvent.description,
+      type: newEvent.type,
+      category: newEvent.category,
+      organizer: {
+        name: user?.name || 'Faculty Name',
+        type: 'university',
+        verificationStatus: 'verified',
+        contactEmail: user?.email || 'faculty@university.edu',
+        logo: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=100&h=100&fit=crop',
+        website: 'https://university.edu'
+      },
+      venue: {
+        name: newEvent.venue,
+        address: newEvent.venue,
+        type: 'physical',
+        capacity: parseInt(newEvent.capacity) || 100
+      },
+      dates: {
+        startDate: new Date(newEvent.startDate).toISOString(),
+        endDate: new Date(newEvent.endDate).toISOString(),
+        registrationDeadline: new Date(newEvent.startDate).toISOString()
+      },
+      fees: {
+        student: parseInt(newEvent.fee) || 0,
+        professional: parseInt(newEvent.fee) * 2 || 0,
+        currency: 'INR'
+      },
+      tags: [newEvent.type, newEvent.category, 'University Event'],
+      requirements: ['Valid student ID', 'Registration required'],
+      benefits: [
+        'Certificate of participation',
+        'Networking opportunities',
+        'Learning experience'
+      ],
+      maxParticipants: parseInt(newEvent.capacity) || 100,
+      createdBy: user?.name || 'Faculty'
+    };
+    
+    // Use data service to add event (this updates the centralized data)
+    const createdEvent = dataService.addEvent(eventData);
+    
+    if (createdEvent) {
+      setEventDialogOpen(false);
+      setNewEvent({
+        title: '',
+        description: '',
+        type: '',
+        category: '',
+        startDate: '',
+        endDate: '',
+        venue: '',
+        capacity: '',
+        fee: '',
+      });
+      
+      // Show success message
+      alert(`Event "${createdEvent.title}" created successfully! All users can now view and register for this event.`);
+    }
   };
 
   const getOrganizerIcon = (type) => {
@@ -341,7 +430,7 @@ const EventDiscovery = ({ userRole }) => {
   const featuredCount = events.filter(event => event.featured).length;
 
   return (
-    <Box className="page-container">
+    <Box className="page-container" sx={{ p: 3 }}>
       {/* Header */}
       <Paper className="header-section">
         <Typography variant="h4" gutterBottom>
@@ -620,6 +709,129 @@ const EventDiscovery = ({ userRole }) => {
           >
             Confirm Registration
           </Button>
+        </DialogActions>
+      </Dialog>
+
+      {/* Floating Action Button for Faculty */}
+      {userRole === 'faculty' && (
+        <Fab
+          color="primary"
+          aria-label="add event"
+          sx={{
+            position: 'fixed',
+            bottom: 16,
+            right: 16,
+          }}
+          onClick={() => setEventDialogOpen(true)}
+        >
+          <Add />
+        </Fab>
+      )}
+
+      {/* Event Creation Dialog */}
+      <Dialog open={eventDialogOpen} onClose={() => setEventDialogOpen(false)} maxWidth="md" fullWidth>
+        <DialogTitle>Create New Event</DialogTitle>
+        <DialogContent>
+          <Grid container spacing={2} sx={{ mt: 1 }}>
+            <Grid item xs={12}>
+              <TextField 
+                fullWidth 
+                label="Event Title" 
+                value={newEvent.title}
+                onChange={(e) => setNewEvent({...newEvent, title: e.target.value})}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField 
+                fullWidth 
+                label="Description" 
+                multiline 
+                rows={3} 
+                value={newEvent.description}
+                onChange={(e) => setNewEvent({...newEvent, description: e.target.value})}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <FormControl fullWidth>
+                <InputLabel>Event Type</InputLabel>
+                <Select 
+                  value={newEvent.type}
+                  onChange={(e) => setNewEvent({...newEvent, type: e.target.value})}
+                >
+                  <MenuItem value="conference">Conference</MenuItem>
+                  <MenuItem value="workshop">Workshop</MenuItem>
+                  <MenuItem value="seminar">Seminar</MenuItem>
+                  <MenuItem value="competition">Competition</MenuItem>
+                  <MenuItem value="hackathon">Hackathon</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <FormControl fullWidth>
+                <InputLabel>Category</InputLabel>
+                <Select 
+                  value={newEvent.category}
+                  onChange={(e) => setNewEvent({...newEvent, category: e.target.value})}
+                >
+                  <MenuItem value="technology">Technology</MenuItem>
+                  <MenuItem value="academic">Academic</MenuItem>
+                  <MenuItem value="cultural">Cultural</MenuItem>
+                  <MenuItem value="sports">Sports</MenuItem>
+                  <MenuItem value="business">Business</MenuItem>
+                </Select>
+              </FormControl>
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField 
+                fullWidth 
+                label="Start Date" 
+                type="date" 
+                InputLabelProps={{ shrink: true }} 
+                value={newEvent.startDate}
+                onChange={(e) => setNewEvent({...newEvent, startDate: e.target.value})}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField 
+                fullWidth 
+                label="End Date" 
+                type="date" 
+                InputLabelProps={{ shrink: true }} 
+                value={newEvent.endDate}
+                onChange={(e) => setNewEvent({...newEvent, endDate: e.target.value})}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField 
+                fullWidth 
+                label="Venue" 
+                value={newEvent.venue}
+                onChange={(e) => setNewEvent({...newEvent, venue: e.target.value})}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField 
+                fullWidth 
+                label="Capacity" 
+                type="number" 
+                value={newEvent.capacity}
+                onChange={(e) => setNewEvent({...newEvent, capacity: e.target.value})}
+              />
+            </Grid>
+            <Grid item xs={12} sm={6}>
+              <TextField 
+                fullWidth 
+                label="Registration Fee (INR)" 
+                type="number" 
+                value={newEvent.fee}
+                onChange={(e) => setNewEvent({...newEvent, fee: e.target.value})}
+              />
+            </Grid>
+          </Grid>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setEventDialogOpen(false)}>Cancel</Button>
+          <Button variant="contained" onClick={handleCreateEvent}>Create Event</Button>
         </DialogActions>
       </Dialog>
     </Box>

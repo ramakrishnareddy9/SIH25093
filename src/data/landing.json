@@ -1,0 +1,82 @@
+{
+  "features": [
+    {
+      "icon": "Dashboard",
+      "title": "Smart Dashboard",
+      "description": "Real-time analytics and personalized insights for academic progress tracking",
+      "color": "#667eea"
+    },
+    {
+      "icon": "Assignment",
+      "title": "Activity Management",
+      "description": "Seamlessly track conferences, certifications, internships, and achievements",
+      "color": "#f093fb"
+    },
+    {
+      "icon": "EmojiEvents",
+      "title": "Event Discovery",
+      "description": "Discover and participate in events from top universities and companies",
+      "color": "#4facfe"
+    },
+    {
+      "icon": "CardMembership",
+      "title": "Certificate Verification",
+      "description": "Secure verification system with blockchain-level authenticity",
+      "color": "#43e97b"
+    },
+    {
+      "icon": "Folder",
+      "title": "Digital Portfolio",
+      "description": "Auto-generated professional portfolios with one-click PDF export",
+      "color": "#fa709a"
+    },
+    {
+      "icon": "Analytics",
+      "title": "Advanced Analytics",
+      "description": "Comprehensive insights for NAAC, AICTE, and NIRF evaluations",
+      "color": "#fee140"
+    }
+  ],
+  "stats": [
+    {
+      "number": "10,000+",
+      "label": "Active Students",
+      "icon": "Group"
+    },
+    {
+      "number": "500+",
+      "label": "Partner Institutions",
+      "icon": "School"
+    },
+    {
+      "number": "50,000+",
+      "label": "Verified Certificates",
+      "icon": "Verified"
+    },
+    {
+      "number": "99.9%",
+      "label": "Uptime Guarantee",
+      "icon": "Security"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Dr. Rajesh Kumar",
+      "role": "Dean, IIT Delhi",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop",
+      "text": "Smart Student Hub has revolutionized how we track and verify student achievements. The platform is intuitive and incredibly powerful."
+    },
+    {
+      "name": "Priya Sharma",
+      "role": "Final Year Student, BITS Pilani",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop",
+      "text": "Creating my digital portfolio was effortless. The automated certificate verification saved me countless hours during job applications."
+    },
+    {
+      "name": "Prof. Ankit Mehta",
+      "role": "HOD Computer Science, NIT Surat",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop",
+      "text": "The analytics dashboard provides invaluable insights for NAAC accreditation. Student engagement has increased by 40% since implementation."
+    }
+  ]
+}

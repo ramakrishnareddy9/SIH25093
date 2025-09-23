@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   Box,
@@ -42,10 +42,21 @@ import {
   Psychology,
 } from '@mui/icons-material';
 
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
+
 const LandingPage = () => {
   const navigate = useNavigate();
+  const dataService = useDataService('LandingPage');
   const [animateCards, setAnimateCards] = useState(false);
   const [currentFeature, setCurrentFeature] = useState(0);
+  const [landingData, setLandingData] = useState({ features: [], stats: [], testimonials: [] });
+
+  useEffect(() => {
+    // Load landing page data from service
+    const data = dataService.getLandingData();
+    setLandingData(data);
+  }, []); // Remove dataService dependency to prevent infinite loop
 
   useEffect(() => {
     const timer = setTimeout(() => setAnimateCards(true), 500);
@@ -54,77 +65,45 @@ const LandingPage = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentFeature((prev) => (prev + 1) % 6);
+      setCurrentFeature((prev) => (prev + 1) % (landingData.features?.length || 6));
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, [landingData.features]);
 
-  const features = [
-    {
-      icon: <Dashboard />,
-      title: 'Smart Dashboard',
-      description: 'Real-time analytics and personalized insights for academic progress tracking',
-      color: '#667eea'
-    },
-    {
-      icon: <Assignment />,
-      title: 'Activity Management',
-      description: 'Seamlessly track conferences, certifications, internships, and achievements',
-      color: '#f093fb'
-    },
-    {
-      icon: <EmojiEvents />,
-      title: 'Event Discovery',
-      description: 'Discover and participate in events from top universities and companies',
-      color: '#4facfe'
-    },
-    {
-      icon: <CardMembership />,
-      title: 'Certificate Verification',
-      description: 'Secure verification system with blockchain-level authenticity',
-      color: '#43e97b'
-    },
-    {
-      icon: <Folder />,
-      title: 'Digital Portfolio',
-      description: 'Auto-generated professional portfolios with one-click PDF export',
-      color: '#fa709a'
-    },
-    {
-      icon: <Analytics />,
-      title: 'Advanced Analytics',
-      description: 'Comprehensive insights for NAAC, AICTE, and NIRF evaluations',
-      color: '#fee140'
-    }
-  ];
+  // Memoize icon mapping to prevent recreation on every render
+  const iconMap = useMemo(() => ({
+    Dashboard: <Dashboard />,
+    Assignment: <Assignment />,
+    EmojiEvents: <EmojiEvents />,
+    CardMembership: <CardMembership />,
+    Folder: <Folder />,
+    Analytics: <Analytics />,
+    Group: <Group />,
+    School: <School />,
+    Verified: <Verified />,
+    Security: <Security />
+  }), []);
 
-  const stats = [
-    { number: '10,000+', label: 'Active Students', icon: <Group /> },
-    { number: '500+', label: 'Partner Institutions', icon: <School /> },
-    { number: '50,000+', label: 'Verified Certificates', icon: <Verified /> },
-    { number: '99.9%', label: 'Uptime Guarantee', icon: <Security /> }
-  ];
+  // Memoize processed data to prevent recreation on every render
+  const { features, stats, testimonials } = useMemo(() => {
+    const processedFeatures = landingData.features?.map(feature => ({
+      ...feature,
+      icon: iconMap[feature.icon] || <Dashboard />
+    })) || [];
 
-  const testimonials = [
-    {
-      name: 'Dr. Rajesh Kumar',
-      role: 'Dean, IIT Delhi',
-      avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop',
-      text: 'Smart Student Hub has revolutionized how we track and verify student achievements. The platform is intuitive and incredibly powerful.'
-    },
-    {
-      name: 'Priya Sharma',
-      role: 'Final Year Student, BITS Pilani',
-      avatar: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop',
-      text: 'Creating my digital portfolio was effortless. The automated certificate verification saved me countless hours during job applications.'
-    },
-    {
-      name: 'Prof. Anita Singh',
-      role: 'HOD Computer Science, NIT Trichy',
-      avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
-      text: 'The analytics dashboard provides incredible insights for accreditation processes. A game-changer for educational institutions.'
-    }
-  ];
+    const processedStats = landingData.stats?.map(stat => ({
+      ...stat,
+      icon: iconMap[stat.icon] || <Group />
+    })) || [];
+
+    const processedTestimonials = landingData.testimonials || [];
+
+    return {
+      features: processedFeatures,
+      stats: processedStats,
+      testimonials: processedTestimonials
+    };
+  }, [landingData, iconMap]);
 
   return (
     <Box sx={{ 

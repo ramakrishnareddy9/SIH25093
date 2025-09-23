@@ -39,12 +39,11 @@ import {
   Upload,
 } from '@mui/icons-material';
 
-// Import data
-import activitiesData from '../../data/activities.json';
-import studentsData from '../../data/students.json';
-import facultyData from '../../data/faculty.json';
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
 
 const FacultyPanel = ({ userRole }) => {
+  const dataService = useDataService('FacultyPanel');
   const [activities, setActivities] = useState([]);
   const [students, setStudents] = useState([]);
   const [selectedActivity, setSelectedActivity] = useState(null);
@@ -53,9 +52,13 @@ const FacultyPanel = ({ userRole }) => {
   const [approvalComment, setApprovalComment] = useState('');
 
   useEffect(() => {
+    // Get data from centralized service
+    const activitiesData = dataService.getAllActivities();
+    const studentsData = dataService.getAllStudents();
+    
     setActivities(activitiesData);
     setStudents(studentsData);
-  }, []);
+  }, []); // Remove dataService dependency to prevent infinite loop
 
   const pendingActivities = activities.filter(
     (activity) => activity.status === 'pending'
@@ -79,34 +82,24 @@ const FacultyPanel = ({ userRole }) => {
   };
 
   const handleApproveActivity = (activityId, comment = '') => {
-    const updatedActivities = activities.map((activity) =>
-      activity.id === activityId
-        ? {
-            ...activity,
-            status: 'approved',
-            approvedBy: 'Dr. Rajesh Kumar',
-            approvalDate: new Date().toISOString().split('T')[0],
-            approvalComment: comment,
-          }
-        : activity
-    );
-    setActivities(updatedActivities);
+    // Use dataService to approve activity
+    const approvedActivity = dataService.approveActivity(activityId, 'Dr. Rajesh Kumar', comment);
+    if (approvedActivity) {
+      // Refresh activities from service
+      const updatedActivities = dataService.getAllActivities();
+      setActivities(updatedActivities);
+    }
     handleCloseDialog();
   };
 
   const handleRejectActivity = (activityId, comment = '') => {
-    const updatedActivities = activities.map((activity) =>
-      activity.id === activityId
-        ? {
-            ...activity,
-            status: 'rejected',
-            rejectedBy: 'Dr. Rajesh Kumar',
-            rejectionDate: new Date().toISOString().split('T')[0],
-            rejectionComment: comment,
-          }
-        : activity
-    );
-    setActivities(updatedActivities);
+    // Use dataService to reject activity
+    const rejectedActivity = dataService.rejectActivity(activityId, 'Dr. Rajesh Kumar', comment);
+    if (rejectedActivity) {
+      // Refresh activities from service
+      const updatedActivities = dataService.getAllActivities();
+      setActivities(updatedActivities);
+    }
     handleCloseDialog();
   };
 

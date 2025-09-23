@@ -1,6 +1,18 @@
-/* Smart Student Hub - Premium Enhanced Styles */
+/* Smart Student Hub - Modern Enhanced Styles */
 
-/* Premium Global Animations */
+/* Modern CSS Variables */
+:root {
+  --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --shadow-light: 0 8px 32px rgba(102, 126, 234, 0.1);
+  --shadow-medium: 0 12px 40px rgba(102, 126, 234, 0.15);
+  --shadow-heavy: 0 20px 60px rgba(102, 126, 234, 0.2);
+  --border-radius: 20px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Modern Global Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -121,14 +133,26 @@
   animation: gradient-shift 4s ease infinite;
 }
 
-/* Premium Enhanced Card Styles */
+/* Modern Glassmorphism Card Styles */
+.glass-card {
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--glass-border) !important;
+  border-radius: var(--border-radius) !important;
+  box-shadow: var(--shadow-light) !important;
+  transition: var(--transition) !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
 .MuiCard-root {
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
   border-radius: 20px !important;
-  box-shadow: 0 4px 20px rgba(102, 126, 234, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04) !important;
-  border: 1px solid rgba(102, 126, 234, 0.1) !important;
-  margin-bottom: 16px !important;
-  background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%) !important;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--glass-border) !important;
+  margin-bottom: 24px !important;
   position: relative !important;
   overflow: hidden !important;
 }
@@ -400,8 +424,10 @@
 
 /* Layout Improvements */
 .main-content {
-  padding: 24px !important;
-  margin-right: 16px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 .content-container {
@@ -410,13 +436,14 @@
 }
 
 .grid-container {
-  padding: 0 16px !important;
+  padding: 0 !important;
 }
 
 .page-container {
-  padding: 16px 32px 12px 24px !important;
-  margin-left: 16px !important;
-  margin-right: 24px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
 }
 
 .section-container {
@@ -428,19 +455,20 @@
   margin: 0 8px !important;
 }
 
-/* Grid Container Improvements */
+/* Let MUI Grid manage its own gutters via spacing prop */
 .MuiGrid-container {
-  margin: 0 !important;
   width: 100% !important;
 }
 
-.MuiGrid-item {
-  padding: 12px !important;
-}
-
 .header-section {
-  margin-bottom: 20px !important;
-  padding: 24px 40px 20px 40px !important;
+  margin: 0 0 32px 0 !important;
+  padding: 40px !important;
+  border-radius: 24px !important;
+  background: var(--primary-gradient) !important;
+  color: white !important;
+  box-shadow: var(--shadow-medium) !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
 .stats-section {
@@ -449,8 +477,13 @@
 }
 
 .content-section {
-  padding: 20px 32px 16px 32px !important;
-  margin-bottom: 20px !important;
+  padding: 32px !important;
+  margin: 0 !important;
+  border-radius: 24px !important;
+  background: var(--glass-bg) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid var(--glass-border) !important;
+  box-shadow: var(--shadow-light) !important;
 }
 
 /* Responsive Design */
@@ -469,24 +502,26 @@
   }
   
   .main-content {
-    padding: 16px !important;
-    margin-right: 8px !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   
   .page-container {
-    padding: 12px 16px 8px 16px !important;
-    margin-left: 8px !important;
-    margin-right: 16px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
   }
   
   .header-section {
-    padding: 16px 16px 12px 16px !important;
-    margin-bottom: 12px !important;
+    padding: 24px 20px !important;
+    margin: 0 0 16px 0 !important;
+    border-radius: 12px !important;
   }
   
   .content-section {
-    padding: 12px 16px 8px 16px !important;
-    margin-bottom: 12px !important;
+    padding: 20px !important;
+    margin: 0 !important;
+    border-radius: 12px !important;
   }
   
   .section-container {
@@ -551,4 +586,157 @@
 .hover-lift:hover {
   transform: translateY(-4px) !important;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Settings Component Styles */
+.settings-container {
+  background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%) !important;
+  border: 1px solid rgba(102, 126, 234, 0.1) !important;
+  box-shadow: 0 8px 32px rgba(102, 126, 234, 0.08) !important;
+  position: relative !important;
+  z-index: 2 !important;
+  overflow: visible !important;
+}
+
+.settings-tab {
+  transition: all 0.3s ease !important;
+}
+
+.settings-tab:hover {
+  background: rgba(102, 126, 234, 0.05) !important;
+  transform: translateY(-2px) !important;
+}
+
+/* Settings Cards */
+.settings-card {
+  background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%) !important;
+  border: 1px solid rgba(102, 126, 234, 0.08) !important;
+  border-radius: 16px !important;
+  transition: all 0.3s ease !important;
+  margin-bottom: 24px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.settings-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 40px rgba(102, 126, 234, 0.12) !important;
+  border-color: rgba(102, 126, 234, 0.2) !important;
+  z-index: 3 !important;
+}
+
+/* Settings Form Controls */
+.settings-switch {
+  transition: all 0.3s ease !important;
+}
+
+.settings-switch:hover {
+  transform: scale(1.05) !important;
+}
+
+/* Settings Profile Avatar */
+.settings-avatar {
+  position: relative !important;
+  transition: all 0.3s ease !important;
+}
+
+.settings-avatar:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2) !important;
+}
+
+/* Settings Layout Fixes */
+.settings-container .MuiGrid-container {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.settings-container .MuiGrid-item {
+  padding: 16px !important;
+}
+
+.settings-container .MuiTabs-root {
+  margin-bottom: 32px !important;
+}
+
+.settings-container .MuiCard-root {
+  margin-bottom: 24px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Prevent overlapping in Settings */
+.settings-container {
+  clear: both !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+.settings-container > * {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+.dark-theme .MuiPaper-root {
+  background-color: #1e1e1e !important;
+  color: #ffffff !important;
+}
+
+.dark-theme .MuiCard-root {
+  background-color: #2d2d2d !important;
+  border-color: #444444 !important;
+}
+
+.dark-theme .MuiTextField-root .MuiInputBase-root {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.dark-theme .MuiSelect-root {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+}
+
+.dark-theme .MuiInputLabel-root {
+  color: #cccccc !important;
+}
+
+.dark-theme .MuiTypography-root {
+  color: #ffffff !important;
+}
+
+.dark-theme .MuiListItemText-secondary {
+  color: #cccccc !important;
+}
+
+/* Compact View Styles */
+.compact-view .MuiCard-root {
+  margin-bottom: 12px !important;
+}
+
+.compact-view .MuiCardContent-root {
+  padding: 16px !important;
+}
+
+.compact-view .header-section {
+  padding: 24px 32px !important;
+  margin-bottom: 16px !important;
+}
+
+.compact-view .content-section {
+  padding: 24px !important;
+}
+
+.compact-view .settings-container .MuiGrid-item {
+  padding: 12px !important;
+}
+
+.compact-view .MuiListItem-root {
+  padding: 8px 16px !important;
 }

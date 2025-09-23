@@ -35,15 +35,22 @@ import {
   Pending,
 } from '@mui/icons-material';
 
-// Import data
-import analyticsData from '../../data/analytics.json';
-import studentsData from '../../data/students.json';
-import activitiesData from '../../data/activities.json';
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
 
 const Analytics = ({ userRole }) => {
+  const dataService = useDataService('Analytics');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [selectedTimeframe, setSelectedTimeframe] = useState('all');
-  const [filteredData, setFilteredData] = useState(analyticsData);
+  const [analyticsData, setAnalyticsData] = useState({});
+  const [filteredData, setFilteredData] = useState({});
+
+  useEffect(() => {
+    // Load analytics data from service
+    const data = dataService.getAnalytics();
+    setAnalyticsData(data);
+    setFilteredData(data);
+  }, []);
 
   useEffect(() => {
     // Apply filters to data
@@ -60,13 +67,17 @@ const Analytics = ({ userRole }) => {
 
   const StatCard = ({ title, value, icon, color, subtitle, trend }) => (
     <Card
+      className="settings-card"
       sx={{
         height: '100%',
         background: `linear-gradient(45deg, ${color} 30%, ${color}90 90%)`,
         color: 'white',
         transition: 'transform 0.2s ease-in-out',
+        position: 'relative',
+        zIndex: 1,
         '&:hover': {
           transform: 'translateY(-4px)',
+          zIndex: 3,
         },
       }}
     >
@@ -96,7 +107,7 @@ const Analytics = ({ userRole }) => {
   );
 
   const DepartmentOverview = () => (
-    <Paper sx={{ p: 3, mb: 3 }}>
+    <Paper sx={{ p: 3, mb: 3, position: 'relative', zIndex: 1 }}>
       <Typography variant="h6" gutterBottom>
         Department Overview
       </Typography>
@@ -158,7 +169,7 @@ const Analytics = ({ userRole }) => {
   );
 
   const ActivityTypeChart = () => (
-    <Paper sx={{ p: 3, mb: 3 }}>
+    <Paper sx={{ p: 3, mb: 3, position: 'relative', zIndex: 1 }}>
       <Typography variant="h6" gutterBottom>
         Activity Type Distribution
       </Typography>
@@ -190,7 +201,7 @@ const Analytics = ({ userRole }) => {
   );
 
   const TopPerformers = () => (
-    <Paper sx={{ p: 3, mb: 3 }}>
+    <Paper sx={{ p: 3, mb: 3, position: 'relative', zIndex: 1 }}>
       <Typography variant="h6" gutterBottom>
         Top Performing Students
       </Typography>
@@ -232,7 +243,7 @@ const Analytics = ({ userRole }) => {
   );
 
   const SkillsAnalysis = () => (
-    <Paper sx={{ p: 3, mb: 3 }}>
+    <Paper sx={{ p: 3, mb: 3, position: 'relative', zIndex: 1 }}>
       <Typography variant="h6" gutterBottom>
         Popular Skills
       </Typography>
@@ -261,7 +272,7 @@ const Analytics = ({ userRole }) => {
   );
 
   const MonthlyTrends = () => (
-    <Paper sx={{ p: 3, mb: 3 }}>
+    <Paper sx={{ p: 3, mb: 3, position: 'relative', zIndex: 1 }}>
       <Typography variant="h6" gutterBottom>
         Monthly Activity Trends
       </Typography>
@@ -328,7 +339,7 @@ const Analytics = ({ userRole }) => {
         </Typography>
         
         {/* Filters */}
-        <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+        <Box sx={{ display: 'flex', gap: 2, mt: 2, flexWrap: 'wrap' }}>
           <FormControl size="small" sx={{ minWidth: 200 }}>
             <InputLabel>Department</InputLabel>
             <Select
@@ -361,107 +372,111 @@ const Analytics = ({ userRole }) => {
       </Paper>
 
       {/* Key Metrics */}
-      <Grid container spacing={3} sx={{ mb: 3 }}>
-        <Grid item xs={12} sm={6} md={3}>
-          <StatCard
-            title="Total Students"
-            value={totalStudents}
-            icon={<People />}
-            color="#1976d2"
-            subtitle="Across all departments"
-            trend="+5% from last month"
-          />
+      <Box className="stats-section">
+        <Grid container spacing={3}>
+          <Grid item xs={12} sm={6} md={3} className="slide-in">
+            <StatCard
+              title="Total Students"
+              value={totalStudents}
+              icon={<People />}
+              color="#1976d2"
+              subtitle="Across all departments"
+              trend="+5% from last month"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <StatCard
+              title="Total Activities"
+              value={totalActivities}
+              icon={<Assignment />}
+              color="#2e7d32"
+              subtitle="All submissions"
+              trend="+12% from last month"
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <StatCard
+              title="Approved"
+              value={totalApproved}
+              icon={<CheckCircle />}
+              color="#ed6c02"
+              subtitle="Faculty approved"
+              trend={`${Math.round((totalApproved / totalActivities) * 100)}% approval rate`}
+            />
+          </Grid>
+          <Grid item xs={12} sm={6} md={3}>
+            <StatCard
+              title="Pending Review"
+              value={totalPending}
+              icon={<Pending />}
+              color="#9c27b0"
+              subtitle="Awaiting approval"
+              trend="Avg 2 days review time"
+            />
+          </Grid>
         </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <StatCard
-            title="Total Activities"
-            value={totalActivities}
-            icon={<Assignment />}
-            color="#2e7d32"
-            subtitle="All submissions"
-            trend="+12% from last month"
-          />
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <StatCard
-            title="Approved"
-            value={totalApproved}
-            icon={<CheckCircle />}
-            color="#ed6c02"
-            subtitle="Faculty approved"
-            trend={`${Math.round((totalApproved / totalActivities) * 100)}% approval rate`}
-          />
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <StatCard
-            title="Pending Review"
-            value={totalPending}
-            icon={<Pending />}
-            color="#9c27b0"
-            subtitle="Awaiting approval"
-            trend="Avg 2 days review time"
-          />
-        </Grid>
-      </Grid>
+      </Box>
 
       {/* Charts and Analysis */}
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <DepartmentOverview />
+      <Paper className="content-section">
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <DepartmentOverview />
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <ActivityTypeChart />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <TopPerformers />
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <MonthlyTrends />
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <SkillsAnalysis />
+          </Grid>
         </Grid>
-        <Grid item xs={12} md={8}>
-          <ActivityTypeChart />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <TopPerformers />
-        </Grid>
-        <Grid item xs={12} md={8}>
-          <MonthlyTrends />
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <SkillsAnalysis />
-        </Grid>
-      </Grid>
 
-      {/* Export Options */}
-      <Paper sx={{ p: 3, mt: 3 }}>
-        <Typography variant="h6" gutterBottom>
-          Export Reports
-        </Typography>
-        <Typography variant="body2" color="text.secondary" gutterBottom>
-          Generate reports for NAAC, AICTE, NIRF, or internal evaluations
-        </Typography>
-        <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
-          <Chip
-            label="NAAC Report"
-            clickable
-            color="primary"
-            variant="outlined"
-          />
-          <Chip
-            label="AICTE Report"
-            clickable
-            color="primary"
-            variant="outlined"
-          />
-          <Chip
-            label="NIRF Report"
-            clickable
-            color="primary"
-            variant="outlined"
-          />
-          <Chip
-            label="Department Report"
-            clickable
-            color="primary"
-            variant="outlined"
-          />
-          <Chip
-            label="Student Report"
-            clickable
-            color="primary"
-            variant="outlined"
-          />
+        {/* Export Options */}
+        <Box sx={{ mt: 4, pt: 3, borderTop: '1px solid rgba(0,0,0,0.1)' }}>
+          <Typography variant="h6" gutterBottom>
+            Export Reports
+          </Typography>
+          <Typography variant="body2" color="text.secondary" gutterBottom>
+            Generate reports for NAAC, AICTE, NIRF, or internal evaluations
+          </Typography>
+          <Box sx={{ display: 'flex', gap: 2, mt: 2, flexWrap: 'wrap' }}>
+            <Chip
+              label="NAAC Report"
+              clickable
+              color="primary"
+              variant="outlined"
+            />
+            <Chip
+              label="AICTE Report"
+              clickable
+              color="primary"
+              variant="outlined"
+            />
+            <Chip
+              label="NIRF Report"
+              clickable
+              color="primary"
+              variant="outlined"
+            />
+            <Chip
+              label="Department Report"
+              clickable
+              color="primary"
+              variant="outlined"
+            />
+            <Chip
+              label="Student Report"
+              clickable
+              color="primary"
+              variant="outlined"
+            />
+          </Box>
         </Box>
       </Paper>
     </Box>

@@ -41,11 +41,11 @@ import {
   FilterList,
 } from '@mui/icons-material';
 
-// Import data
-import activitiesData from '../../data/activities.json';
-import studentsData from '../../data/students.json';
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
 
 const ActivityTracker = ({ userRole }) => {
+  const dataService = useDataService('ActivityTracker');
   const [activities, setActivities] = useState([]);
   const [filteredActivities, setFilteredActivities] = useState([]);
   const [openDialog, setOpenDialog] = useState(false);
@@ -67,7 +67,9 @@ const ActivityTracker = ({ userRole }) => {
     skills: [],
   });
 
-  const activityTypes = [
+  // Get dynamic activity types and categories from service
+  const activityTypesData = dataService.getActivityTypes();
+  const activityTypes = activityTypesData.activityTypes?.map(type => type.type) || [
     'conference',
     'certification',
     'internship',
@@ -77,7 +79,7 @@ const ActivityTracker = ({ userRole }) => {
     'workshop',
   ];
 
-  const categories = [
+  const categories = activityTypesData.categories || [
     'Academic',
     'Technical',
     'Leadership',
@@ -86,18 +88,17 @@ const ActivityTracker = ({ userRole }) => {
   ];
 
   useEffect(() => {
-    // Load activities based on user role
+    // Load activities from service based on user role
     if (userRole === 'student') {
       // Show only current student's activities
-      const studentActivities = activitiesData.filter(
-        (activity) => activity.studentId === 'STU001'
-      );
+      const studentActivities = dataService.getActivitiesByStudent('STU001');
       setActivities(studentActivities);
     } else {
       // Show all activities for faculty/admin
-      setActivities(activitiesData);
+      const allActivities = dataService.getAllActivities();
+      setActivities(allActivities);
     }
-  }, [userRole]);
+  }, [userRole]); // Remove dataService dependency to prevent infinite loop
 
   useEffect(() => {
     // Apply filters
@@ -347,7 +348,7 @@ const ActivityTracker = ({ userRole }) => {
   );
 
   return (
-    <Box className="page-container">
+    <Box className="page-container" sx={{ p: 3 }}>
       {/* Header */}
       <Paper className="header-section">
         <Typography variant="h4" gutterBottom>

@@ -25,51 +25,67 @@ import {
   Business,
 } from '@mui/icons-material';
 
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
+
 const Sidebar = ({ open, toggleSidebar, userRole }) => {
   const navigate = useNavigate();
   const location = useLocation();
+  const dataService = useDataService('Sidebar');
 
   const getMenuItems = () => {
-    const commonItems = [
-      { text: 'Dashboard', icon: <Dashboard />, path: '/app/dashboard' },
-      { text: 'Profile', icon: <Person />, path: '/app/profile' },
-    ];
-
-    const studentItems = [
-      { text: 'Activities', icon: <Assignment />, path: '/app/activities' },
-      { text: 'Events', icon: <Event />, path: '/app/events' },
-      { text: 'Certificates', icon: <CardMembership />, path: '/app/certificates' },
-      { text: 'Portfolio', icon: <Folder />, path: '/app/portfolio' },
-    ];
-
-    const facultyItems = [
-      { text: 'Events', icon: <Event />, path: '/app/events' },
-      { text: 'Organizer Panel', icon: <Business />, path: '/app/organizer' },
-      { text: 'Approval Panel', icon: <CheckCircle />, path: '/app/faculty' },
-      { text: 'Certificates', icon: <CardMembership />, path: '/app/certificates' },
-      { text: 'Analytics', icon: <Analytics />, path: '/app/analytics' },
-    ];
-
-    const adminItems = [
-      { text: 'Activities', icon: <Assignment />, path: '/app/activities' },
-      { text: 'Events', icon: <Event />, path: '/app/events' },
-      { text: 'Organizer Panel', icon: <Business />, path: '/app/organizer' },
-      { text: 'Faculty Panel', icon: <School />, path: '/app/faculty' },
-      { text: 'Certificates', icon: <CardMembership />, path: '/app/certificates' },
-      { text: 'Analytics', icon: <Analytics />, path: '/app/analytics' },
-      { text: 'Admin Panel', icon: <AdminPanelSettings />, path: '/app/admin' },
-    ];
-
-    switch (userRole) {
-      case 'student':
-        return [...commonItems, ...studentItems];
-      case 'faculty':
-        return [...commonItems, ...facultyItems];
-      case 'admin':
-        return [...commonItems, ...adminItems];
-      default:
-        return commonItems;
+    // Get menu items from service
+    const menuData = dataService.getMenuItems();
+    
+    // Icon mapping for menu items
+    const iconMap = {
+      Dashboard: <Dashboard />,
+      AdminPanelSettings: <AdminPanelSettings />,
+      Business: <Business />,
+      Analytics: <Analytics />,
+      Person: <Person />,
+      Assignment: <Assignment />,
+      Event: <Event />,
+      CardMembership: <CardMembership />,
+      Folder: <Folder />,
+      School: <School />
+    };
+    
+    // Get menu items for current role from service data
+    const roleMenuItems = menuData.menuItems?.[userRole];
+    
+    if (roleMenuItems) {
+      return roleMenuItems.map(item => ({
+        ...item,
+        icon: iconMap[item.icon] || <Dashboard />
+      }));
     }
+    
+    // Fallback to hardcoded menu items if service data not available
+    if (userRole === 'admin') {
+      return [
+        { text: 'Dashboard', icon: <Dashboard />, path: '/app/dashboard' },
+        { text: 'Admin Panel', icon: <AdminPanelSettings />, path: '/app/admin' },
+        { text: 'Settings', icon: <Business />, path: '/app/settings' },
+      ];
+    } else if (userRole === 'student') {
+      return [
+        { text: 'Dashboard', icon: <Dashboard />, path: '/app/dashboard' },
+        { text: 'My Profile', icon: <Person />, path: '/app/profile' },
+        { text: 'Activities', icon: <Assignment />, path: '/app/activities' },
+        { text: 'Events', icon: <Event />, path: '/app/events' },
+        { text: 'Certificates', icon: <CardMembership />, path: '/app/certificates' },
+        { text: 'Portfolio', icon: <Folder />, path: '/app/portfolio' },
+      ];
+    } else if (userRole === 'faculty') {
+      return [
+        { text: 'Dashboard', icon: <Dashboard />, path: '/app/dashboard' },
+        { text: 'Faculty Panel', icon: <School />, path: '/app/faculty' },
+        { text: 'My Profile', icon: <Person />, path: '/app/profile' },
+        { text: 'Events', icon: <Event />, path: '/app/events' },
+      ];
+    }
+    return [];
   };
 
   const handleNavigation = (path) => {
@@ -152,16 +168,22 @@ const Sidebar = ({ open, toggleSidebar, userRole }) => {
         {/* Role-specific additional items */}
         {userRole === 'admin' && (
           <List>
-            <Tooltip title={!open ? 'System Settings' : ''} placement="right">
+            <Tooltip title={!open ? 'Analytics' : ''} placement="right">
               <ListItem disablePadding>
                 <ListItemButton
+                  onClick={() => handleNavigation('/app/analytics')}
                   sx={{
                     minHeight: 48,
                     justifyContent: open ? 'initial' : 'center',
                     px: 2.5,
+                    backgroundColor: isActive('/app/analytics')
+                      ? 'rgba(255, 255, 255, 0.1)'
+                      : 'transparent',
                     '&:hover': {
                       backgroundColor: 'rgba(255, 255, 255, 0.08)',
                     },
+                    borderRadius: open ? '0 25px 25px 0' : '0',
+                    mr: open ? 1 : 0,
                   }}
                 >
                   <ListItemIcon
@@ -172,10 +194,10 @@ const Sidebar = ({ open, toggleSidebar, userRole }) => {
                       color: 'white',
                     }}
                   >
-                    <AdminPanelSettings />
+                    <Analytics />
                   </ListItemIcon>
                   <ListItemText
-                    primary="System Settings"
+                    primary="Analytics"
                     sx={{
                       opacity: open ? 1 : 0,
                       transition: 'opacity 0.3s ease',

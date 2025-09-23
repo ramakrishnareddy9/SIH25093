@@ -42,11 +42,11 @@ import {
   Upload,
 } from '@mui/icons-material';
 
-// Import data
-import studentsData from '../../data/students.json';
-import activitiesData from '../../data/activities.json';
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
 
 const Profile = ({ userRole }) => {
+  const dataService = useDataService('Profile');
   const [student, setStudent] = useState(null);
   const [editMode, setEditMode] = useState(false);
   const [editedStudent, setEditedStudent] = useState(null);
@@ -55,17 +55,33 @@ const Profile = ({ userRole }) => {
   const [showSuccess, setShowSuccess] = useState(false);
 
   useEffect(() => {
-    // Get current student data (first student for demo)
-    const currentStudent = studentsData[0];
+    // Get current student data from service
+    const studentsData = dataService.getAllStudents();
+    const currentStudent = studentsData[0] || {
+      id: 'STU001',
+      name: 'Student User',
+      email: 'student@college.edu',
+      rollNumber: 'CS001',
+      department: 'Computer Science',
+      year: 3,
+      semester: 6,
+      gpa: 8.5,
+      attendance: 90,
+      totalCredits: 160,
+      completedCredits: 120,
+      phone: '+91 9876543210',
+      address: '123 Main Street',
+      dateOfBirth: '2003-01-01',
+      bloodGroup: 'O+',
+      parentContact: '+91 9876543211'
+    };
     setStudent(currentStudent);
     setEditedStudent(currentStudent);
 
-    // Get student activities
-    const studentActivities = activitiesData.filter(
-      (activity) => activity.studentId === currentStudent.id
-    );
+    // Get student activities from service
+    const studentActivities = dataService.getActivitiesByStudent(currentStudent.id);
     setActivities(studentActivities);
-  }, []);
+  }, []); // Remove dataService dependency to prevent infinite loop
 
   const handleEditToggle = () => {
     if (editMode) {
@@ -75,10 +91,14 @@ const Profile = ({ userRole }) => {
   };
 
   const handleSave = () => {
-    setStudent(editedStudent);
-    setEditMode(false);
-    setShowSuccess(true);
-    setTimeout(() => setShowSuccess(false), 3000);
+    // Update student data using dataService
+    const updatedStudent = dataService.updateStudent(editedStudent.id, editedStudent);
+    if (updatedStudent) {
+      setStudent(editedStudent);
+      setEditMode(false);
+      setShowSuccess(true);
+      setTimeout(() => setShowSuccess(false), 3000);
+    }
   };
 
   const handleInputChange = (field, value) => {
@@ -512,7 +532,7 @@ const Profile = ({ userRole }) => {
   }
 
   return (
-    <Box className="page-container">
+    <Box className="page-container" sx={{ p: 3 }}>
       {/* Header */}
       <Paper className="header-section">
         <Typography variant="h4" gutterBottom>

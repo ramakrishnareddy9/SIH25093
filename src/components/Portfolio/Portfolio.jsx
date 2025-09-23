@@ -39,11 +39,11 @@ import {
   CalendarToday,
 } from '@mui/icons-material';
 
-// Import data
-import studentsData from '../../data/students.json';
-import activitiesData from '../../data/activities.json';
+// Import services and hooks
+import { useDataService } from '../../hooks/useDataService';
 
 const Portfolio = ({ userRole }) => {
+  const dataService = useDataService('Portfolio');
   const [student, setStudent] = useState(null);
   const [activities, setActivities] = useState([]);
   const [previewOpen, setPreviewOpen] = useState(false);
@@ -54,19 +54,29 @@ const Portfolio = ({ userRole }) => {
     window.print();
   };
 
-
   useEffect(() => {
-    // Get current student data (first student for demo)
-    const currentStudent = studentsData[0];
+    // Get current student data from service
+    const studentsData = dataService.getAllStudents();
+    const currentStudent = studentsData[0] || {
+      id: 'STU001',
+      name: 'Student User',
+      email: 'student@college.edu',
+      rollNumber: 'CS001',
+      department: 'Computer Science',
+      year: 3,
+      semester: 6,
+      gpa: 8.5,
+      attendance: 90,
+      phone: '+91 9876543210',
+      profileImage: null
+    };
     setStudent(currentStudent);
 
-    // Get approved activities for the student
-    const studentActivities = activitiesData.filter(
-      (activity) =>
-        activity.studentId === currentStudent.id && activity.status === 'approved'
-    );
+    // Get approved activities for the student from service
+    const studentActivities = dataService.getActivitiesByStudent(currentStudent.id)
+      .filter(activity => activity.status === 'approved');
     setActivities(studentActivities);
-  }, []);
+  }, []); // Remove dataService dependency to prevent infinite loop
 
   const handleDownloadPDF = () => {
     // This would integrate with jsPDF to generate PDF
@@ -242,13 +252,29 @@ const Portfolio = ({ userRole }) => {
   );
 
   const ActivitiesSection = () => {
-    const activityTypes = [
+    // Get activity types from service
+    const activityTypesData = dataService.getActivityTypes();
+    
+    // Icon mapping for activity types
+    const iconMap = {
+      Star: <Star />,
+      Work: <Work />,
+      EmojiEvents: <EmojiEvents />,
+      School: <School />,
+      VolunteerActivism: <VolunteerActivism />,
+      Psychology: <Psychology />
+    };
+    
+    const activityTypes = activityTypesData.activityTypes?.map(type => ({
+      ...type,
+      icon: iconMap[type.icon] || <Star />
+    })) || [
       { type: 'certification', icon: <Star />, label: 'Certifications' },
       { type: 'internship', icon: <Work />, label: 'Internships' },
       { type: 'competition', icon: <EmojiEvents />, label: 'Competitions' },
       { type: 'conference', icon: <School />, label: 'Conferences' },
       { type: 'volunteering', icon: <VolunteerActivism />, label: 'Volunteering' },
-      { type: 'leadership', icon: <Psychology />, label: 'Leadership' },
+      { type: 'leadership', icon: <Psychology />, label: 'Leadership' }
     ];
 
     return (

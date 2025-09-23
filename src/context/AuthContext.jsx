@@ -5,6 +5,8 @@ import facultyData from '../data/faculty.json';
 
 const AuthContext = createContext();
 
+export { AuthContext };
+
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
@@ -145,13 +147,13 @@ export const AuthProvider = ({ children }) => {
   const logout = () => {
     setUser(null);
     setIsAuthenticated(false);
-    localStorage.removeItem('currentUser');
+    localStorage.removeItem('user');
+    localStorage.removeItem('isAuthenticated');
   };
 
-  const updateUser = (updatedUserData) => {
-    const updatedUser = { ...user, ...updatedUserData };
+  const updateUser = (updatedUser) => {
     setUser(updatedUser);
-    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
+    localStorage.setItem('user', JSON.stringify(updatedUser));
   };
 
   const value = {
@@ -162,7 +164,6 @@ export const AuthProvider = ({ children }) => {
     signup,
     logout,
     updateUser,
-    determineRoleFromEmail
   };
 
   return (

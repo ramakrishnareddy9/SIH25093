@@ -41,14 +41,14 @@ import {
   CloudUpload,
 } from '@mui/icons-material';
 
-// Import components and data
+// Import components and services
 import CertificateUpload from './CertificateUpload';
-import certificatesData from '../../data/certificates.json';
-import studentsData from '../../data/students.json';
 import { useAuth } from '../../context/AuthContext';
+import { useDataService } from '../../hooks/useDataService';
 
 const CertificateManager = ({ userRole }) => {
   const { user } = useAuth();
+  const dataService = useDataService('CertificateManager');
   const [certificates, setCertificates] = useState([]);
   const [filteredCertificates, setFilteredCertificates] = useState([]);
   const [uploadDialogOpen, setUploadDialogOpen] = useState(false);
@@ -58,17 +58,16 @@ const CertificateManager = ({ userRole }) => {
   const [approvalComment, setApprovalComment] = useState('');
 
   useEffect(() => {
-    // Load certificates based on user role
+    // Load certificates from service based on user role
     if (userRole === 'student') {
-      const studentCerts = certificatesData.filter(
-        cert => cert.studentId === user.studentId || cert.studentId === user.id
-      );
+      const studentCerts = dataService.getCertificatesByStudent(user.studentId || user.id);
       setCertificates(studentCerts);
     } else {
       // Faculty and admin can see all certificates
-      setCertificates(certificatesData);
+      const allCertificates = dataService.getAllCertificates();
+      setCertificates(allCertificates);
     }
-  }, [userRole, user]);
+  }, [userRole, user]); // Remove dataService dependency to prevent infinite loop
 
   useEffect(() => {
     // Apply tab filters
@@ -156,6 +155,7 @@ const CertificateManager = ({ userRole }) => {
   };
 
   const getStudentInfo = (studentId) => {
+    const studentsData = dataService.getAllStudents();
     return studentsData.find(student => student.id === studentId);
   };
 

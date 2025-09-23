@@ -1,0 +1,85 @@
+{
+  "menuItems": {
+    "admin": [
+      {
+        "text": "Dashboard",
+        "icon": "Dashboard",
+        "path": "/app/dashboard"
+      },
+      {
+        "text": "Admin Panel",
+        "icon": "AdminPanelSettings",
+        "path": "/app/admin"
+      },
+      {
+        "text": "Analytics",
+        "icon": "Analytics",
+        "path": "/app/analytics"
+      },
+      {
+        "text": "Settings",
+        "icon": "Business",
+        "path": "/app/settings"
+      }
+    ],
+    "student": [
+      {
+        "text": "Dashboard",
+        "icon": "Dashboard",
+        "path": "/app/dashboard"
+      },
+      {
+        "text": "My Profile",
+        "icon": "Person",
+        "path": "/app/profile"
+      },
+      {
+        "text": "Activities",
+        "icon": "Assignment",
+        "path": "/app/activities"
+      },
+      {
+        "text": "Events",
+        "icon": "Event",
+        "path": "/app/events"
+      },
+      {
+        "text": "Certificates",
+        "icon": "CardMembership",
+        "path": "/app/certificates"
+      },
+      {
+        "text": "Portfolio",
+        "icon": "Folder",
+        "path": "/app/portfolio"
+      }
+    ],
+    "faculty": [
+      {
+        "text": "Dashboard",
+        "icon": "Dashboard",
+        "path": "/app/dashboard"
+      },
+      {
+        "text": "Faculty Panel",
+        "icon": "School",
+        "path": "/app/faculty"
+      },
+      {
+        "text": "My Profile",
+        "icon": "Person",
+        "path": "/app/profile"
+      },
+      {
+        "text": "Events",
+        "icon": "Event",
+        "path": "/app/events"
+      },
+      {
+        "text": "Analytics",
+        "icon": "Analytics",
+        "path": "/app/analytics"
+      }
+    ]
+  }
+}
