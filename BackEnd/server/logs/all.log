@@ -1,0 +1,1328 @@
+2025-09-20 09:01:10:110 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mProcess ID: 16412[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:01:10:110 [32minfo[39m: [32mMemory usage: {"rss":114540544,"heapTotal":75751424,"heapUsed":36775984,"external":20732894,"arrayBuffers":18263623}[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mProcess ID: 23428[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:01:32:132 [32minfo[39m: [32mMemory usage: {"rss":113360896,"heapTotal":75489280,"heapUsed":36667712,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:06:03:63 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mProcess ID: 22780[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:06:04:64 [32minfo[39m: [32mMemory usage: {"rss":114192384,"heapTotal":76013568,"heapUsed":36666304,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mProcess ID: 19308[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:13:29:1329 [32minfo[39m: [32mMemory usage: {"rss":113684480,"heapTotal":76013568,"heapUsed":36660600,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:13:47:1347 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:13:48:1348 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mProcess ID: 16184[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:13:49:1349 [32minfo[39m: [32mMemory usage: {"rss":113332224,"heapTotal":75751424,"heapUsed":36747048,"external":20732894,"arrayBuffers":18263623}[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mProcess ID: 6068[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:14:04:144 [32minfo[39m: [32mMemory usage: {"rss":114249728,"heapTotal":75751424,"heapUsed":36667224,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mProcess ID: 2732[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:14:22:1422 [32minfo[39m: [32mMemory usage: {"rss":113860608,"heapTotal":75751424,"heapUsed":36689608,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mProcess ID: 8988[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:14:40:1440 [32minfo[39m: [32mMemory usage: {"rss":114089984,"heapTotal":76013568,"heapUsed":36660576,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:14:58:1458 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mProcess ID: 18188[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:14:59:1459 [32minfo[39m: [32mMemory usage: {"rss":114397184,"heapTotal":75751424,"heapUsed":36669184,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mProcess ID: 20992[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:15:19:1519 [32minfo[39m: [32mMemory usage: {"rss":113852416,"heapTotal":75489280,"heapUsed":36685320,"external":20732894,"arrayBuffers":18263623}[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mProcess ID: 576[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:15:39:1539 [32minfo[39m: [32mMemory usage: {"rss":114118656,"heapTotal":76013568,"heapUsed":36662024,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mProcess ID: 10008[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:15:58:1558 [32minfo[39m: [32mMemory usage: {"rss":114937856,"heapTotal":76013568,"heapUsed":36677128,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mProcess ID: 10680[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:16:23:1623 [32minfo[39m: [32mMemory usage: {"rss":114561024,"heapTotal":75751424,"heapUsed":36653576,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mProcess ID: 20968[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:16:36:1636 [32minfo[39m: [32mMemory usage: {"rss":114356224,"heapTotal":76013568,"heapUsed":36656288,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mProcess ID: 9424[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-20 09:16:46:1646 [32minfo[39m: [32mMemory usage: {"rss":114413568,"heapTotal":75751424,"heapUsed":36623560,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mMongoDB URI: mongodb://127.0.0.1:27017/eduflow[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mMongoDB Connected: 127.0.0.1[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mProcess ID: 24764[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 14:12:26:1226 [32minfo[39m: [32mMemory usage: {"rss":113676288,"heapTotal":75595776,"heapUsed":36599088,"external":20732894,"arrayBuffers":18263623}[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mMongoDB URI: mongodb://127.0.0.1:27017/eduflow[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mMongoDB Connected: 127.0.0.1[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mProcess ID: 9196[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 14:14:32:1432 [32minfo[39m: [32mMemory usage: {"rss":113795072,"heapTotal":75595776,"heapUsed":36541368,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 14:44:23:4423 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mProcess ID: 12380[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 17:43:01:431 [32minfo[39m: [32mMemory usage: {"rss":110018560,"heapTotal":76013568,"heapUsed":36709264,"external":20707411,"arrayBuffers":18263447}[39m
+2025-09-22 18:00:20:020 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-22 18:00:50:050 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-22 22:38:45:3845 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:11:55:1155 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:12:18:1218 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:12:31:1231 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mProcess ID: 25988[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:13:14:1314 [32minfo[39m: [32mMemory usage: {"rss":115032064,"heapTotal":76013568,"heapUsed":36755800,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mProcess ID: 28624[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:30:53:3053 [32minfo[39m: [32mMemory usage: {"rss":116813824,"heapTotal":75489280,"heapUsed":36716632,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mProcess ID: 18396[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:35:24:3524 [32minfo[39m: [32mMemory usage: {"rss":117252096,"heapTotal":75751424,"heapUsed":36760520,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mProcess ID: 22680[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:35:30:3530 [32minfo[39m: [32mMemory usage: {"rss":116744192,"heapTotal":75751424,"heapUsed":36753960,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mProcess ID: 13280[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:35:37:3537 [32minfo[39m: [32mMemory usage: {"rss":117706752,"heapTotal":76275712,"heapUsed":36772944,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mProcess ID: 26852[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:36:03:363 [32minfo[39m: [32mMemory usage: {"rss":117329920,"heapTotal":76275712,"heapUsed":36723112,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mProcess ID: 23548[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:36:09:369 [32minfo[39m: [32mMemory usage: {"rss":117092352,"heapTotal":75751424,"heapUsed":36760672,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mProcess ID: 22064[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:40:50:4050 [32minfo[39m: [32mMemory usage: {"rss":117022720,"heapTotal":76013568,"heapUsed":36751816,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mProcess ID: 31492[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:40:58:4058 [32minfo[39m: [32mMemory usage: {"rss":117886976,"heapTotal":72351744,"heapUsed":43863824,"external":20732926,"arrayBuffers":18263655}[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mProcess ID: 30436[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:41:07:417 [32minfo[39m: [32mMemory usage: {"rss":117485568,"heapTotal":72081408,"heapUsed":43615104,"external":20732926,"arrayBuffers":18263655}[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mProcess ID: 23728[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:41:20:4120 [32minfo[39m: [32mMemory usage: {"rss":117215232,"heapTotal":75489280,"heapUsed":36748328,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mProcess ID: 25984[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:41:30:4130 [32minfo[39m: [32mMemory usage: {"rss":116822016,"heapTotal":75489280,"heapUsed":36749000,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mProcess ID: 28392[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-22 23:52:00:520 [32minfo[39m: [32mMemory usage: {"rss":116908032,"heapTotal":75751424,"heapUsed":36757280,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-22 23:52:12:5212 [31merror[39m: [31m[2025-09-22T18:22:12.151Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-22 23:52:12:5212 [31merror[39m: [31m[2025-09-22T18:22:12.160Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-22 23:54:04:544 [31merror[39m: [31m[2025-09-22T18:24:04.688Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-22 23:54:04:544 [31merror[39m: [31m[2025-09-22T18:24:04.693Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-22 23:55:11:5511 [31merror[39m: [31m[2025-09-22T18:25:11.523Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-22 23:55:11:5511 [31merror[39m: [31m[2025-09-22T18:25:11.528Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-23 00:19:09:199 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 00:19:37:1937 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 00:20:01:201 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 00:22:18:2218 [33mwarn[39m: [33mMongoose disconnected[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 00:23:19:2319 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 00:23:50:2350 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mProcess ID: 7576[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 00:25:07:257 [32minfo[39m: [32mMemory usage: {"rss":117837824,"heapTotal":75751424,"heapUsed":36727848,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 10:47:39:4739 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mProcess ID: 16736[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 10:47:40:4740 [32minfo[39m: [32mMemory usage: {"rss":119091200,"heapTotal":76013568,"heapUsed":36889416,"external":20732894,"arrayBuffers":18263623}[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mProcess ID: 20600[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 10:52:17:5217 [32minfo[39m: [32mMemory usage: {"rss":119312384,"heapTotal":75751424,"heapUsed":36716352,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mProcess ID: 15720[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 10:53:13:5313 [32minfo[39m: [32mMemory usage: {"rss":119607296,"heapTotal":75751424,"heapUsed":36740256,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 10:54:59:5459 [31merror[39m: [31m[2025-09-23T05:24:59.120Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-23 10:54:59:5459 [31merror[39m: [31m[2025-09-23T05:24:59.131Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-23 10:59:07:597 [31merror[39m: [31m[2025-09-23T05:29:07.145Z] Error: The CORS policy for this site does not allow access from the specified Origin.[39m
+[31m    at origin (C:\Users\GANESH\Desktop\ganesh\server\src\index.js:126:23)[39m
+[31m    at C:\Users\GANESH\Desktop\ganesh\server\node_modules\cors\lib\index.js:219:13[39m
+[31m    at optionsCallback (C:\Users\GANESH\Desktop\ganesh\server\node_modules\cors\lib\index.js:199:9)[39m
+[31m    at corsMiddleware (C:\Users\GANESH\Desktop\ganesh\server\node_modules\cors\lib\index.js:204:7)[39m
+[31m    at Layer.handle [as handle_request] (C:\Users\GANESH\Desktop\ganesh\server\node_modules\express\lib\router\layer.js:95:5)[39m
+[31m    at trim_prefix (C:\Users\GANESH\Desktop\ganesh\server\node_modules\express\lib\router\index.js:328:13)[39m
+[31m    at C:\Users\GANESH\Desktop\ganesh\server\node_modules\express\lib\router\index.js:286:9[39m
+[31m    at Function.process_params (C:\Users\GANESH\Desktop\ganesh\server\node_modules\express\lib\router\index.js:346:12)[39m
+[31m    at next (C:\Users\GANESH\Desktop\ganesh\server\node_modules\express\lib\router\index.js:280:10)[39m
+[31m    at Layer.handle [as handle_request] (C:\Users\GANESH\Desktop\ganesh\server\node_modules\express\lib\router\layer.js:91:12)[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mProcess ID: 28436[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:00:21:021 [32minfo[39m: [32mMemory usage: {"rss":119324672,"heapTotal":76013568,"heapUsed":36764080,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mProcess ID: 12536[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:01:20:120 [32minfo[39m: [32mMemory usage: {"rss":114053120,"heapTotal":75227136,"heapUsed":36739808,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:09:47:947 [31merror[39m: [31m[2025-09-23T05:39:47.554Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-23 11:09:47:947 [31merror[39m: [31m[2025-09-23T05:39:47.560Z] TypeError: Cannot read properties of undefined (reading 'id')[39m
+[31m    at protect (C:\Users\GANESH\Desktop\ganesh\server\src\middleware\auth.js:291:58)[39m
+[31m    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:10:47:1047 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mProcess ID: 27476[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:10:48:1048 [32minfo[39m: [32mMemory usage: {"rss":119377920,"heapTotal":76013568,"heapUsed":36755776,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mProcess ID: 20608[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:14:14:1414 [32minfo[39m: [32mMemory usage: {"rss":114475008,"heapTotal":76013568,"heapUsed":36743272,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:17:20:1720 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:17:20:1720 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mProcess ID: 30340[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:19:30:1930 [32minfo[39m: [32mMemory usage: {"rss":117481472,"heapTotal":76275712,"heapUsed":36734368,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:20:13:2013 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:20:13:2013 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:20:16:2016 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:20:16:2016 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:20:19:2019 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mProcess ID: 26812[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:20:20:2020 [32minfo[39m: [32mMemory usage: {"rss":117018624,"heapTotal":75751424,"heapUsed":36780736,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:21:02:212 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mProcess ID: 31488[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:21:03:213 [32minfo[39m: [32mMemory usage: {"rss":117264384,"heapTotal":76013568,"heapUsed":36768704,"external":20732894,"arrayBuffers":18263623}[39m
+2025-09-23 11:21:16:2116 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:21:16:2116 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mProcess ID: 20632[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:21:54:2154 [32minfo[39m: [32mMemory usage: {"rss":116989952,"heapTotal":76013568,"heapUsed":36747528,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mProcess ID: 25300[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 11:23:31:2331 [32minfo[39m: [32mMemory usage: {"rss":117186560,"heapTotal":76013568,"heapUsed":36777008,"external":20732926,"arrayBuffers":18263623}[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mProcess ID: 13504[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 14:46:59:4659 [32minfo[39m: [32mMemory usage: {"rss":115793920,"heapTotal":75227136,"heapUsed":36571208,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 14:54:57:5457 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:54:57:5457 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:54:57:5457 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:54:57:5457 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:02:552 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:02:552 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:04:554 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:04:554 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:05:555 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:05:555 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:05:555 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:05:555 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:10:5510 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:10:5510 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:12:5512 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:12:5512 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:12:5512 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:12:5512 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:47:5547 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:47:5547 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:47:5547 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:47:5547 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:49:5549 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:55:49:5549 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:56:55:5655 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 14:56:55:5655 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:00:56:056 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 15:01:22:122 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 15:01:56:156 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 15:02:34:234 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 15:03:23:323 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 15:06:51:651 [33mwarn[39m: [33mMongoose disconnected[39m
+2025-09-23 15:12:14:1214 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:14:1214 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:19:1219 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:19:1219 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:20:1220 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:20:1220 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:21:1221 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:21:1221 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:21:1221 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:21:1221 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:25:1225 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:12:25:1225 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 15:16:05:165 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 15:18:47:1847 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 15:18:57:1857 [33mwarn[39m: [33mMongoose disconnected[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mProcess ID: 25968[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:06:18:618 [32minfo[39m: [32mMemory usage: {"rss":119246848,"heapTotal":75751424,"heapUsed":36590576,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:07:08:78 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:07:24:724 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:07:58:758 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:08:33:833 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mProcess ID: 30136[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:08:51:851 [32minfo[39m: [32mMemory usage: {"rss":112640000,"heapTotal":75489280,"heapUsed":36592048,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:09:48:948 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:12:47:1247 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mProcess ID: 24244[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:25:53:2553 [32minfo[39m: [32mMemory usage: {"rss":112336896,"heapTotal":75751424,"heapUsed":36592024,"external":20707411,"arrayBuffers":18263447}[39m
+2025-09-23 16:26:40:2640 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:27:26:2726 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:27:50:2750 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'jwt')[39m
+2025-09-23 16:30:18:3018 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mProcess ID: 14468[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:34:37:3437 [32minfo[39m: [32mMemory usage: {"rss":112345088,"heapTotal":76275712,"heapUsed":36622016,"external":20707411,"arrayBuffers":18263447}[39m
+2025-09-23 16:35:20:3520 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mProcess ID: 25460[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:38:13:3813 [32minfo[39m: [32mMemory usage: {"rss":112263168,"heapTotal":76013568,"heapUsed":36598608,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:39:33:3933 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:39:52:3952 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mProcess ID: 20212[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:41:08:418 [32minfo[39m: [32mMemory usage: {"rss":112443392,"heapTotal":75751424,"heapUsed":36600960,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:41:52:4152 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:42:18:4218 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mProcess ID: 12984[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:42:51:4251 [32minfo[39m: [32mMemory usage: {"rss":112754688,"heapTotal":75489280,"heapUsed":36590168,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:43:33:4333 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:43:47:4347 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mProcess ID: 11708[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:45:08:458 [32minfo[39m: [32mMemory usage: {"rss":112508928,"heapTotal":75751424,"heapUsed":36595824,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:45:18:4518 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 16:45:52:4552 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mMongoDB connected successfully[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mServer running in development mode on port 5000[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mProcess ID: 29984[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mNode version: v22.14.0[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mPlatform: win32 x64[39m
+2025-09-23 16:46:36:4636 [32minfo[39m: [32mMemory usage: {"rss":112680960,"heapTotal":76013568,"heapUsed":36596168,"external":20707443,"arrayBuffers":18263447}[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-23 16:46:49:4649 [32minfo[39m: [32mMongoDB Connected: localhost[39m
+2025-09-23 17:06:17:617 [33mwarn[39m: [33mMongoose disconnected[39m
+2025-09-23 17:23:08:238 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 17:47:21:4721 [33mwarn[39m: [33mMongoose disconnected[39m
+2025-09-23 17:47:56:4756 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 17:47:56:4756 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 17:48:12:4812 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 17:48:12:4812 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 17:53:17:5317 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 17:53:45:5345 [31merror[39m: [31mAuth middleware error: Cannot read properties of undefined (reading 'refreshToken')[39m
+2025-09-23 17:54:25:5425 [33mwarn[39m: [33mMongoose disconnected[39m
+2025-09-23 17:59:00:590 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 18:09:32:932 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
+2025-09-23 23:46:20:4620 [31merror[39m: [31mMongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017[39m

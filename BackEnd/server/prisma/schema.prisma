@@ -1,0 +1,219 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// User model with role-based access control
+model User {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  password      String
+  firstName     String
+  lastName      String
+  role          UserRole  @default(STUDENT)
+  student       Student?
+  faculty       Faculty?
+  admin         Admin?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Student profile
+model Student {
+  id            String    @id @default(uuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  enrollmentNo  String    @unique
+  department    String
+  batch         String
+  activities    Activity[]
+  achievements  Achievement[]
+  portfolio     Portfolio?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Faculty profile
+model Faculty {
+  id            String    @id @default(uuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  department    String
+  designation   String
+  activities    Activity[] @relation("ActivityApprover")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Admin profile
+model Admin {
+  id            String    @id @default(uuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  department    String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Activity types
+model ActivityType {
+  id            String    @id @default(uuid())
+  name          String    @unique
+  description   String?
+  category      ActivityCategory
+  activities    Activity[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Student activities
+model Activity {
+  id            String    @id @default(uuid())
+  title         String
+  description   String
+  category      ActivityCategory
+  typeId        String
+  type          ActivityType @relation(fields: [typeId], references: [id])
+  studentId     String
+  student       Student     @relation(fields: [studentId], references: [id])
+  facultyId     String
+  faculty       Faculty     @relation("ActivityApprover", fields: [facultyId], references: [id])
+  status        ActivityStatus @default(PENDING)
+  date          DateTime
+  endDate       DateTime?
+  location      String?
+  organizer     String?
+  certificate   String?     // URL to certificate
+  evidence      String?     // URL to supporting evidence
+  feedback      String?
+  score         Float?
+  maxScore      Float?
+  achievements  Achievement[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Student achievements
+model Achievement {
+  id            String    @id @default(uuid())
+  title         String
+  description   String
+  studentId     String
+  student       Student   @relation(fields: [studentId], references: [id])
+  activityId    String?
+  activity      Activity? @relation(fields: [activityId], references: [id])
+  type          AchievementType
+  level         AchievementLevel
+  dateAwarded   DateTime
+  issuedBy      String
+  certificate   String?   // URL to certificate
+  verified      Boolean   @default(false)
+  verifiedBy    String?   // Faculty/Admin ID
+  verifiedAt    DateTime?
+  portfolio     Portfolio @relation(fields: [portfolioId], references: [id])
+  portfolioId   String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+// Student portfolio
+model Portfolio {
+  id            String    @id @default(uuid())
+  studentId     String    @unique
+  student       Student   @relation(fields: [studentId], references: [id])
+  achievements  Achievement[]
+  skills        String[]
+  bio           String?
+  isPublic      Boolean   @default(false)
+  shareToken    String?   @unique
+  lastUpdated   DateTime  @updatedAt
+  createdAt     DateTime  @default(now())
+}
+
+// Analytics and reports
+model Report {
+  id            String    @id @default(uuid())
+  name          String
+  type          ReportType
+  filters       Json?     // Store filter criteria
+  generatedBy   String    // User ID
+  fileUrl       String?
+  status        ReportStatus @default(PENDING)
+  createdAt     DateTime  @default(now())
+  completedAt   DateTime?
+}
+
+// Enums
+enum UserRole {
+  STUDENT
+  FACULTY
+  ADMIN
+  SUPER_ADMIN
+}
+
+enum ActivityCategory {
+  ACADEMIC
+  RESEARCH
+  SPORTS
+  CULTURAL
+  TECHNICAL
+  SOCIAL
+  LEADERSHIP
+  VOLUNTEER
+  INTERNSHIP
+  WORKSHOP
+  CONFERENCE
+  CERTIFICATION
+  OTHER
+}
+
+enum ActivityStatus {
+  DRAFT
+  PENDING
+  APPROVED
+  REJECTED
+  COMPLETED
+}
+
+enum AchievementType {
+  CERTIFICATE
+  AWARD
+  MEDAL
+  SCHOLARSHIP
+  RECOGNITION
+  BADGE
+  OTHER
+}
+
+enum AchievementLevel {
+  INSTITUTE
+  UNIVERSITY
+  STATE
+  NATIONAL
+  INTERNATIONAL
+}
+
+enum ReportType {
+  STUDENT_ACTIVITY
+  FACULTY_ACTIVITY
+  DEPARTMENT_ACTIVITY
+  ACHIEVEMENT_SUMMARY
+  NAAC
+  AICTE
+  NIRF
+  CUSTOM
+}
+
+enum ReportStatus {
+  PENDING
+  PROCESSING
+  COMPLETED
+  FAILED
+}
