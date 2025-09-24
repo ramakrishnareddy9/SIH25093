@@ -1,0 +1,51 @@
+# MongoDB Atlas Environment Configuration
+# Copy this content to your .env file in BackEnd/server/.env
+
+NODE_ENV=development
+PORT=5000
+
+# MongoDB Atlas Cloud Connection (REQUIRED)
+MONGODB_URI=mongodb+srv://db_sih:12345@cluster1.uepik1b.mongodb.net/eduflow?retryWrites=true&w=majority&appName=Cluster1
+
+# JWT Configuration (REQUIRED)
+JWT_ACCESS_SECRET=4f8b9d7c6e2a1f0b3d5c7a8e1f9b6d4a
+JWT_REFRESH_SECRET=4f8b9d7c6e2a1f0b3d5c7a8e1f9b6d4a_refresh
+JWT_ACCESS_EXPIRATION=15m
+JWT_REFRESH_EXPIRATION=7d
+JWT_RESET_PASSWORD_EXPIRATION=10m
+JWT_VERIFY_EMAIL_EXPIRATION=24h
+JWT_ISSUER=smart-student-hub
+
+# Email Configuration
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USERNAME=noreply@smartstudenthub.com
+EMAIL_PASSWORD=dummy_password_for_dev
+EMAIL_FROM=Smart Student Hub <noreply@smartstudenthub.com>
+SUPPORT_EMAIL=support@smartstudenthub.com
+
+# Client Configuration
+CLIENT_URL=http://localhost:3000
+API_URL=http://localhost:5000
+
+# Security Configuration
+CORS_ORIGIN=http://localhost:3000
+RATE_LIMIT_WINDOW_MS=900000
+RATE_LIMIT_MAX=100
+SESSION_SECRET=4f8b9d7c6e2a1f0b3d5c7a8e1f9b6d4a_session
+
+# Optional: Cloud Storage (if using Cloudinary)
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+# Optional: File Upload Configuration
+UPLOAD_DIR=./uploads
+PDF_OUTPUT_DIR=./pdfs
+CLOUD_STORAGE=false
+
+# Optional: Additional Settings
+XSS_PROTECTION=true
+NO_CACHE=true
+LOG_LEVEL=info
+API_DOCS_PATH=/api-docs

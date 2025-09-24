@@ -1326,3 +1326,84 @@
 2025-09-23 17:59:00:590 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
 2025-09-23 18:09:32:932 [31merror[39m: [31mUncaught Exception: listen EADDRINUSE: address already in use :::5000[39m
 2025-09-23 23:46:20:4620 [31merror[39m: [31mMongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mMongoDB URI: mongodb://localhost:27017/eduflow[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-24 08:40:52:4052 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-24 08:40:57:4057 [31merror[39m: [31mMongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mMongoDB URI: mongodb+srv://db_sih:12345@cluster1.uepik1b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mAttempting to connect to MongoDB Atlas Cloud...[39m
+2025-09-24 09:17:14:1714 [32minfo[39m: [32mConnection URI format: mongodb+srv://***@cluster***[39m
+2025-09-24 09:17:15:1715 [31merror[39m: [31m❌ MongoDB Atlas connection failed: Connection pool for ac-objllth-shard-00-02.uepik1b.mongodb.net:27017 was cleared because another operation failed with: "D40B0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80[39m
+[31m"[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mMongoDB URI: mongodb+srv://db_sih:12345@cluster1.uepik1b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mAttempting to connect to MongoDB Atlas Cloud...[39m
+2025-09-24 09:17:54:1754 [32minfo[39m: [32mConnection URI format: mongodb+srv://***@cluster***[39m
+2025-09-24 09:17:54:1754 [31merror[39m: [31m❌ MongoDB Atlas connection failed: 10370000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80[39m
+[31m[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mEnvironment: development[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mMongoDB URI: mongodb+srv://db_sih:12345@cluster1.uepik1b.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/auth[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/courses[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/users[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/certificates[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/categories[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/test[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/ai[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/achievements[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/portfolio[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/education[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/students[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/activities[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/events[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/faculty[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mRegistered route: /api/analytics[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mAttempting to connect to MongoDB Atlas Cloud...[39m
+2025-09-24 09:18:23:1823 [32minfo[39m: [32mConnection URI format: mongodb+srv://***@cluster***[39m
+2025-09-24 09:18:25:1825 [31merror[39m: [31m❌ MongoDB Atlas connection failed: 4C170000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:c:\ws\deps\openssl\openssl\ssl\record\rec_layer_s3.c:1605:SSL alert number 80[39m
+[31m[39m

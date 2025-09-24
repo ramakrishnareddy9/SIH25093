@@ -1,13 +1,19 @@
 // ApiService.js - Centralized API service for backend communication
 class ApiService {
   constructor() {
-    this.baseURL = 'http://localhost:5000/api';
+    // Use environment variable or fallback to default
+    this.baseURL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
     this.subscribers = new Map();
     this.isLoaded = false;
     this.authToken = null;
     
     // Load auth token from localStorage if available
     this.loadAuthToken();
+    
+    // Log API configuration in development
+    if (import.meta.env.DEV) {
+      console.log('API Service initialized with base URL:', this.baseURL);
+    }
   }
 
   // Load authentication token from localStorage
