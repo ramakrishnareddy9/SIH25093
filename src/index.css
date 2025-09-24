@@ -1,0 +1,164 @@
+/* Smart Student Hub - Modern Harmonious Styles */
+
+/* CSS Custom Properties - Triadic Color Harmony */
+:root {
+  /* Primary Colors - Triadic Harmony */
+  --primary-blue: #2563eb;
+  --primary-blue-light: #3b82f6;
+  --primary-blue-dark: #1d4ed8;
+  --secondary-coral: #ff6b6b;
+  --secondary-coral-light: #ff8787;
+  --secondary-coral-dark: #ff5252;
+  --tertiary-amber: #f59e0b;
+  --tertiary-amber-light: #fbbf24;
+  --tertiary-amber-dark: #d97706;
+  --accent-emerald: #10b981;
+  --accent-emerald-light: #34d399;
+  --accent-emerald-dark: #059669;
+  
+  /* Neutral Palette */
+  --neutral-50: #f8fafc;
+  --neutral-100: #f1f5f9;
+  --neutral-200: #e2e8f0;
+  --neutral-300: #cbd5e1;
+  --neutral-400: #94a3b8;
+  --neutral-500: #64748b;
+  --neutral-600: #475569;
+  --neutral-700: #334155;
+  --neutral-800: #1e293b;
+  --neutral-900: #0f172a;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-coral) 100%);
+  --gradient-secondary: linear-gradient(135deg, var(--tertiary-amber) 0%, var(--accent-emerald) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--secondary-coral) 0%, var(--tertiary-amber) 100%);
+  --gradient-neutral: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-100) 100%);
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(37, 99, 235, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(37, 99, 235, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(37, 99, 235, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(37, 99, 235, 0.1);
+  
+  /* Transitions */
+  --transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--gradient-neutral);
+  color: var(--neutral-800);
+  line-height: 1.6;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Enhanced Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neutral-100);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient-primary);
+  border-radius: 8px;
+  transition: var(--transition-normal);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--secondary-coral-dark) 100%);
+}
+
+/* Modern Link Styles */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: var(--transition-normal);
+  position: relative;
+}
+
+a:hover {
+  color: var(--primary-blue-dark);
+}
+
+a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-primary);
+  border-radius: 1px;
+}
+
+/* Enhanced Selection Styles */
+::selection {
+  background: rgba(37, 99, 235, 0.15);
+  color: var(--primary-blue-dark);
+}
+
+/* Modern Focus Styles */
+*:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Print Styles */
+@media print {
+  :root {
+    --primary-blue: #000000;
+    --secondary-coral: #666666;
+    --tertiary-amber: #333333;
+    --accent-emerald: #000000;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: none;
+    --transition-normal: none;
+    --transition-slow: none;
+  }
+  
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
