@@ -1,7 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import usersData from '../data/users.json';
-import studentsData from '../data/students.json';
-import facultyData from '../data/faculty.json';
+import apiService from '../services/ApiService';
 
 const AuthContext = createContext();
 
@@ -49,49 +47,49 @@ export const AuthProvider = ({ children }) => {
     return 'student'; // Default to student
   };
 
-  const getUserProfile = (userData) => {
-    if (userData.role === 'student' && userData.studentId) {
-      return studentsData.find(student => student.id === userData.studentId);
-    } else if (userData.role === 'faculty' && userData.facultyId) {
-      return facultyData.find(faculty => faculty.id === userData.facultyId);
+  const getUserProfile = async (userData) => {
+    try {
+      if (userData.role === 'student' && userData.studentId) {
+        return await apiService.getStudentById(userData.studentId);
+      } else if (userData.role === 'faculty' && userData.facultyId) {
+        return await apiService.getFacultyById(userData.facultyId);
+      }
+    } catch (error) {
+      console.error('Error fetching user profile:', error);
     }
     return null;
   };
 
   const login = async (email, password) => {
     try {
-      // Find user in the users data
-      const foundUser = usersData.find(
-        user => user.email.toLowerCase() === email.toLowerCase() && user.password === password
-      );
-
-      if (foundUser && foundUser.isActive) {
-        // Simulate login success
-        const userData = {
-          id: foundUser.id,
-          name: foundUser.name,
-          email: email,
-          role: foundUser.role,
-          studentId: foundUser.studentId,
-          profile: foundUser.profile
-        };
+      setLoading(true);
+      
+      // Use API service to authenticate
+      const response = await apiService.login({ email, password });
+      
+      if (response.success && response.data.user) {
+        const userData = response.data.user;
         
         setUser(userData);
         setIsAuthenticated(true);
-        localStorage.setItem('user', JSON.stringify(userData));
-        localStorage.setItem('isAuthenticated', 'true');
+        localStorage.setItem('currentUser', JSON.stringify(userData));
         
         return { success: true, redirectTo: '/app/dashboard', user: userData };
       } else {
-        return { success: false, error: 'Invalid email or password' };
+        return { success: false, error: response.message || 'Invalid email or password' };
       }
     } catch (error) {
+      console.error('Login error:', error);
       return { success: false, error: 'Login failed. Please try again.' };
+    } finally {
+      setLoading(false);
     }
   };
 
   const signup = async (userData) => {
     try {
+      setLoading(true);
+      
       const { email, password, name, confirmPassword } = userData;
 
       // Validate password match
@@ -99,61 +97,55 @@ export const AuthProvider = ({ children }) => {
         return { success: false, error: 'Passwords do not match' };
       }
 
-      // Check if user already exists
-      const existingUser = usersData.find(
-        user => user.email.toLowerCase() === email.toLowerCase()
-      );
-
-      if (existingUser) {
-        return { success: false, error: 'User with this email already exists' };
-      }
-
       // Determine role from email
       const role = determineRoleFromEmail(email);
 
-      // Create new user object
-      const newUser = {
-        id: `USR${String(usersData.length + 1).padStart(3, '0')}`,
+      // Create registration data
+      const registrationData = {
         email: email.toLowerCase(),
-        password: password, // In production, this should be hashed
-        role: role,
+        password: password,
         name: name,
-        isActive: true,
-        lastLogin: new Date().toISOString(),
-        studentId: role === 'student' ? `STU${String(usersData.length + 1).padStart(3, '0')}` : null,
-        facultyId: role === 'faculty' ? `FAC${String(usersData.length + 1).padStart(3, '0')}` : null
+        role: role
       };
 
-      // In a real application, you would save this to a database
-      // For now, we'll just simulate successful registration
+      // Use API service to register
+      const response = await apiService.register(registrationData);
       
-      const userDataWithProfile = {
-        ...newUser,
-        profile: null // New users won't have profile data initially
-      };
-
-      setUser(userDataWithProfile);
-      setIsAuthenticated(true);
-      
-      // Save to localStorage
-      localStorage.setItem('currentUser', JSON.stringify(userDataWithProfile));
-      
-      return { success: true, user: userDataWithProfile };
+      if (response.success && response.data.user) {
+        const newUser = response.data.user;
+        
+        setUser(newUser);
+        setIsAuthenticated(true);
+        localStorage.setItem('currentUser', JSON.stringify(newUser));
+        
+        return { success: true, user: newUser };
+      } else {
+        return { success: false, error: response.message || 'Registration failed' };
+      }
     } catch (error) {
+      console.error('Registration error:', error);
       return { success: false, error: 'Registration failed. Please try again.' };
+    } finally {
+      setLoading(false);
     }
   };
 
-  const logout = () => {
-    setUser(null);
-    setIsAuthenticated(false);
-    localStorage.removeItem('user');
-    localStorage.removeItem('isAuthenticated');
+  const logout = async () => {
+    try {
+      await apiService.logout();
+    } catch (error) {
+      console.error('Logout error:', error);
+    } finally {
+      setUser(null);
+      setIsAuthenticated(false);
+      localStorage.removeItem('currentUser');
+      localStorage.removeItem('authToken');
+    }
   };
 
   const updateUser = (updatedUser) => {
     setUser(updatedUser);
-    localStorage.setItem('user', JSON.stringify(updatedUser));
+    localStorage.setItem('currentUser', JSON.stringify(updatedUser));
   };
 
   const value = {

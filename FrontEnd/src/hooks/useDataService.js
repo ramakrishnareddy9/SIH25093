@@ -28,36 +28,36 @@ export const useDataService = (componentName = 'component') => {
   }, [componentName]);
 
   // Events
-  const getAllEvents = useCallback(() => {
+  const getAllEvents = useCallback(async () => {
     try {
-      return dataService.getAllEvents();
+      return await dataService.getAllEvents();
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const addEvent = useCallback((eventData) => {
+  const addEvent = useCallback(async (eventData) => {
     try {
-      return dataService.addEvent(eventData);
+      return await dataService.addEvent(eventData);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const updateEvent = useCallback((id, updates) => {
+  const updateEvent = useCallback(async (id, updates) => {
     try {
-      return dataService.updateEvent(id, updates);
+      return await dataService.updateEvent(id, updates);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const deleteEvent = useCallback((id) => {
+  const deleteEvent = useCallback(async (id) => {
     try {
-      return dataService.deleteEvent(id);
+      return await dataService.deleteEvent(id);
     } catch (err) {
       setError(err);
       return null;
@@ -65,45 +65,45 @@ export const useDataService = (componentName = 'component') => {
   }, []);
 
   // Activities
-  const getAllActivities = useCallback(() => {
+  const getAllActivities = useCallback(async () => {
     try {
-      return dataService.getAllActivities();
+      return await dataService.getAllActivities();
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const addActivity = useCallback((activityData) => {
+  const addActivity = useCallback(async (activityData) => {
     try {
-      return dataService.addActivity(activityData);
+      return await dataService.addActivity(activityData);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const updateActivity = useCallback((id, updates) => {
+  const updateActivity = useCallback(async (id, updates) => {
     try {
-      return dataService.updateActivity(id, updates);
+      return await dataService.updateActivity(id, updates);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const approveActivity = useCallback((id, approverName, comment) => {
+  const approveActivity = useCallback(async (id, approverName, comment) => {
     try {
-      return dataService.approveActivity(id, approverName, comment);
+      return await dataService.approveActivity(id, approverName, comment);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const rejectActivity = useCallback((id, rejectorName, comment) => {
+  const rejectActivity = useCallback(async (id, rejectorName, comment) => {
     try {
-      return dataService.rejectActivity(id, rejectorName, comment);
+      return await dataService.rejectActivity(id, rejectorName, comment);
     } catch (err) {
       setError(err);
       return null;
@@ -111,45 +111,45 @@ export const useDataService = (componentName = 'component') => {
   }, []);
 
   // Certificates
-  const getAllCertificates = useCallback(() => {
+  const getAllCertificates = useCallback(async () => {
     try {
-      return dataService.getAllCertificates();
+      return await dataService.getAllCertificates();
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const addCertificate = useCallback((certificateData) => {
+  const addCertificate = useCallback(async (certificateData) => {
     try {
-      return dataService.addCertificate(certificateData);
+      return await dataService.addCertificate(certificateData);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const updateCertificate = useCallback((id, updates) => {
+  const updateCertificate = useCallback(async (id, updates) => {
     try {
-      return dataService.updateCertificate(id, updates);
+      return await dataService.updateCertificate(id, updates);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const approveCertificate = useCallback((id, approverName, comment) => {
+  const approveCertificate = useCallback(async (id, approverName, comment) => {
     try {
-      return dataService.approveCertificate(id, approverName, comment);
+      return await dataService.approveCertificate(id, approverName, comment);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const rejectCertificate = useCallback((id, rejectorName, comment) => {
+  const rejectCertificate = useCallback(async (id, rejectorName, comment) => {
     try {
-      return dataService.rejectCertificate(id, rejectorName, comment);
+      return await dataService.rejectCertificate(id, rejectorName, comment);
     } catch (err) {
       setError(err);
       return null;
@@ -157,27 +157,27 @@ export const useDataService = (componentName = 'component') => {
   }, []);
 
   // Students
-  const getAllStudents = useCallback(() => {
+  const getAllStudents = useCallback(async () => {
     try {
-      return dataService.getAllStudents();
+      return await dataService.getAllStudents();
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getStudentById = useCallback((id) => {
+  const getStudentById = useCallback(async (id) => {
     try {
-      return dataService.getStudentById(id);
+      return await dataService.getStudentById(id);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const updateStudent = useCallback((id, updates) => {
+  const updateStudent = useCallback(async (id, updates) => {
     try {
-      return dataService.updateStudent(id, updates);
+      return await dataService.updateStudent(id, updates);
     } catch (err) {
       setError(err);
       return null;
@@ -185,27 +185,27 @@ export const useDataService = (componentName = 'component') => {
   }, []);
 
   // Faculty
-  const getAllFaculty = useCallback(() => {
+  const getAllFaculty = useCallback(async () => {
     try {
-      return dataService.getAllFaculty();
+      return await dataService.getAllFaculty();
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getFacultyById = useCallback((id) => {
+  const getFacultyById = useCallback(async (id) => {
     try {
-      return dataService.getFacultyById(id);
+      return await dataService.getFacultyById(id);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const updateFaculty = useCallback((id, updates) => {
+  const updateFaculty = useCallback(async (id, updates) => {
     try {
-      return dataService.updateFaculty(id, updates);
+      return await dataService.updateFaculty(id, updates);
     } catch (err) {
       setError(err);
       return null;
@@ -213,81 +213,81 @@ export const useDataService = (componentName = 'component') => {
   }, []);
 
   // Utility functions
-  const getStatistics = useCallback(() => {
+  const getStatistics = useCallback(async () => {
     try {
-      return dataService.getStatistics();
+      return await dataService.getStatistics();
     } catch (err) {
       setError(err);
       return {};
     }
   }, []);
 
-  const searchEvents = useCallback((query) => {
+  const searchEvents = useCallback(async (query) => {
     try {
-      return dataService.searchEvents(query);
+      return await dataService.searchEvents(query);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const searchActivities = useCallback((query) => {
+  const searchActivities = useCallback(async (query) => {
     try {
-      return dataService.searchActivities(query);
+      return await dataService.searchActivities(query);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getEventsByStatus = useCallback((status) => {
+  const getEventsByStatus = useCallback(async (status) => {
     try {
-      return dataService.getEventsByStatus(status);
+      return await dataService.getEventsByStatus(status);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getActivitiesByStatus = useCallback((status) => {
+  const getActivitiesByStatus = useCallback(async (status) => {
     try {
-      return dataService.getActivitiesByStatus(status);
+      return await dataService.getActivitiesByStatus(status);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getCertificatesByStatus = useCallback((status) => {
+  const getCertificatesByStatus = useCallback(async (status) => {
     try {
-      return dataService.getCertificatesByStatus(status);
+      return await dataService.getCertificatesByStatus(status);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getEventsByOrganizer = useCallback((organizerName) => {
+  const getEventsByOrganizer = useCallback(async (organizerName) => {
     try {
-      return dataService.getEventsByOrganizer(organizerName);
+      return await dataService.getEventsByOrganizer(organizerName);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getActivitiesByStudent = useCallback((studentId) => {
+  const getActivitiesByStudent = useCallback(async (studentId) => {
     try {
-      return dataService.getActivitiesByStudent(studentId);
+      return await dataService.getActivitiesByStudent(studentId);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getCertificatesByStudent = useCallback((studentId) => {
+  const getCertificatesByStudent = useCallback(async (studentId) => {
     try {
-      return dataService.getCertificatesByStudent(studentId);
+      return await dataService.getCertificatesByStudent(studentId);
     } catch (err) {
       setError(err);
       return [];
@@ -322,9 +322,9 @@ export const useDataService = (componentName = 'component') => {
     }
   }, []);
 
-  const getAnalytics = useCallback(() => {
+  const getAnalytics = useCallback(async () => {
     try {
-      const data = dataService.getAnalytics();
+      const data = await dataService.getAnalytics();
       // Ensure all required arrays exist with fallbacks
       return {
         departmentStats: data.departmentStats || [],
@@ -348,63 +348,63 @@ export const useDataService = (componentName = 'component') => {
   }, []);
 
   // Registration operations
-  const getAllRegistrations = useCallback(() => {
+  const getAllRegistrations = useCallback(async () => {
     try {
-      return dataService.getAllRegistrations();
+      return await dataService.getAllRegistrations();
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getRegistrationsByEvent = useCallback((eventId) => {
+  const getRegistrationsByEvent = useCallback(async (eventId) => {
     try {
-      return dataService.getRegistrationsByEvent(eventId);
+      return await dataService.getRegistrationsByEvent(eventId);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const getRegistrationsByStudent = useCallback((studentId) => {
+  const getRegistrationsByStudent = useCallback(async (studentId) => {
     try {
-      return dataService.getRegistrationsByStudent(studentId);
+      return await dataService.getRegistrationsByStudent(studentId);
     } catch (err) {
       setError(err);
       return [];
     }
   }, []);
 
-  const addRegistration = useCallback((registrationData) => {
+  const addRegistration = useCallback(async (registrationData) => {
     try {
-      return dataService.addRegistration(registrationData);
+      return await dataService.addRegistration(registrationData);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const updateRegistration = useCallback((registrationId, updates) => {
+  const updateRegistration = useCallback(async (registrationId, updates) => {
     try {
-      return dataService.updateRegistration(registrationId, updates);
+      return await dataService.updateRegistration(registrationId, updates);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const cancelRegistration = useCallback((registrationId) => {
+  const cancelRegistration = useCallback(async (registrationId) => {
     try {
-      return dataService.cancelRegistration(registrationId);
+      return await dataService.cancelRegistration(registrationId);
     } catch (err) {
       setError(err);
       return null;
     }
   }, []);
 
-  const markAttendance = useCallback((registrationId, attendanceStatus) => {
+  const markAttendance = useCallback(async (registrationId, attendanceStatus) => {
     try {
-      return dataService.markAttendance(registrationId, attendanceStatus);
+      return await dataService.markAttendance(registrationId, attendanceStatus);
     } catch (err) {
       setError(err);
       return null;
